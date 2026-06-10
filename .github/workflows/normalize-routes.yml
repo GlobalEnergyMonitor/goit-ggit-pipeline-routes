@@ -1,0 +1,65 @@
+# Rebuilds the `normalized` branch whenever route files change on main.
+# Originals on main are never modified -- they keep their original metadata
+# and coordinate precision. The normalized branch gets canonical
+# FeatureCollections: 6-decimal coordinates, no legacy crs member, and a
+# ProjectID property on every feature (see scripts/normalize_geojson.py).
+#
+# Validation runs first; if any route file on main is invalid, the
+# normalized branch is not updated until main is fixed.
+
+name: normalize routes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/individual-routes/**'
+      - 'scripts/normalize_geojson.py'
+      - 'scripts/validate_geojson.py'
+      - '.github/workflows/normalize-routes.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: normalize-routes
+  cancel-in-progress: true
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: validate all route files
+        run: python3 scripts/validate_geojson.py --all
+
+      - name: build normalized tree
+        run: python3 scripts/normalize_geojson.py --out "$RUNNER_TEMP/normalized"
+
+      - name: commit and push to normalized branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git fetch origin normalized; then
+            git worktree add --detach "$RUNNER_TEMP/norm-branch" FETCH_HEAD
+            cd "$RUNNER_TEMP/norm-branch"
+          else
+            # first run: start the branch with no shared history
+            git worktree add --detach "$RUNNER_TEMP/norm-branch"
+            cd "$RUNNER_TEMP/norm-branch"
+            git switch --orphan normalized-build
+          fi
+
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -R "$RUNNER_TEMP/normalized/." .
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "normalized routes unchanged -- nothing to push"
+          else
+            git commit -m "normalize routes from ${GITHUB_SHA::7}"
+            git push origin HEAD:refs/heads/normalized
+          fi

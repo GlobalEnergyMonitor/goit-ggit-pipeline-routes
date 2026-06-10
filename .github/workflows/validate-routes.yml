@@ -1,0 +1,44 @@
+# Validates route GeoJSON files changed in a pull request:
+# valid JSON/GeoJSON, WGS 84, no Z coordinates, coordinates in range,
+# filename matches P####.geojson, no duplicate ProjectID across fuel folders.
+# Run manually (workflow_dispatch) to audit every file in the repo.
+
+name: validate routes
+
+on:
+  pull_request:
+    paths:
+      - 'data/individual-routes/**/*.geojson'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: collect changed route files
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
+            --paginate --jq '.[] | select(.status != "removed") | .filename' \
+            | { grep -E '^data/individual-routes/.+\.geojson$' || true; } > changed-files.txt
+          echo "$(wc -l < changed-files.txt) changed route file(s)"
+
+      - name: validate changed files
+        if: github.event_name == 'pull_request'
+        run: |
+          if [ -s changed-files.txt ]; then
+            xargs python3 scripts/validate_geojson.py < changed-files.txt
+          else
+            echo "no route files to validate"
+          fi
+
+      - name: validate all files
+        if: github.event_name == 'workflow_dispatch'
+        run: python3 scripts/validate_geojson.py --all
