@@ -1,9 +1,113 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature", 
-            "geometry": null
-        }
-    ]
+  "type": "FeatureCollection",
+  "name": "P1955",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            46.03961900003303,
+            28.347480776730944
+          ],
+          [
+            46.71623181925507,
+            28.115414551276068
+          ],
+          [
+            47.13462042818694,
+            27.963048620860032
+          ],
+          [
+            47.898168314494164,
+            27.759594868872934
+          ],
+          [
+            48.627091689203866,
+            27.481955148605977
+          ],
+          [
+            48.93767433877965,
+            27.300725269933583
+          ],
+          [
+            49.00227309276921,
+            27.26950253862846
+          ],
+          [
+            49.2380585442922,
+            27.08754938234502
+          ],
+          [
+            49.49612377613332,
+            26.973874751241343
+          ],
+          [
+            49.51720762661874,
+            26.955914433443706
+          ],
+          [
+            49.566949896912455,
+            26.925850424091973
+          ],
+          [
+            49.646599999844284,
+            26.88134007225794
+          ],
+          [
+            49.799246823674586,
+            26.688123463428674
+          ],
+          [
+            49.955784507020276,
+            26.506860289646735
+          ],
+          [
+            49.99549772227571,
+            26.485754974862527
+          ],
+          [
+            50.043135859696285,
+            26.446056526946105
+          ],
+          [
+            50.09005121892748,
+            26.376858157036153
+          ],
+          [
+            50.11217998705646,
+            26.348766180655232
+          ],
+          [
+            50.124024869660616,
+            26.321615966386556
+          ]
+        ]
+      },
+      "properties": {
+        "source": "gulfpub",
+        "gulfpub_objectid": 4102,
+        "gulfpub_name": "Trans-Arabian Pipeline / Tapline",
+        "gulfpub_status": "Operating",
+        "gulfpub_diameter_in": 30.0,
+        "gulfpub_length_km": 506.9,
+        "gulfpub_start": "Al-Dammām, Saudia Arabia",
+        "gulfpub_end": "Al-Qayṣūmah, Saudi Arabia",
+        "gulfpub_operator": "Aramco",
+        "goit_project_id": "P1955",
+        "goit_pipeline_name": "Trans-Arabian Oil Pipeline",
+        "goit_route_accuracy_at_export": "no route",
+        "fuel": "OIL",
+        "confidence": "green",
+        "extracted_date": "2026-05-21"
+      }
+    }
+  ]
 }

@@ -1,7 +1,93 @@
 {
-"type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "ProjectID": "P0637" }, "geometry": { "type": "LineString", "coordinates": [ [ 49.687097, 25.931734 ], [ 50.60086, 26.120019 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "P0637",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            49.684508352370216,
+            25.92547355364146
+          ],
+          [
+            49.72524630551465,
+            25.92253850783932
+          ],
+          [
+            49.81659448028203,
+            25.978924395619586
+          ],
+          [
+            49.90131093139762,
+            26.085746139554995
+          ],
+          [
+            50.064416033393805,
+            26.23456466311737
+          ],
+          [
+            50.15370714700892,
+            26.216706439959793
+          ],
+          [
+            50.211434050484755,
+            26.223309876261773
+          ],
+          [
+            50.23619512853458,
+            26.224359964453367
+          ],
+          [
+            50.32123428504294,
+            26.191194692881357
+          ],
+          [
+            50.412226182578756,
+            26.17248607870781
+          ],
+          [
+            50.489061884386665,
+            26.17534644653687
+          ],
+          [
+            50.516824344293525,
+            26.1265649345604
+          ],
+          [
+            50.564530863270164,
+            26.100021940317376
+          ],
+          [
+            50.601800538781916,
+            26.116891730462054
+          ]
+        ]
+      },
+      "properties": {
+        "source": "gulfpub",
+        "gulfpub_objectid": 391,
+        "gulfpub_name": "AB-4 Pipeline",
+        "gulfpub_status": "Operating",
+        "gulfpub_diameter_in": 30.0,
+        "gulfpub_length_km": 111.0,
+        "gulfpub_start": "Abqaiq field, Saudi Arabia",
+        "gulfpub_end": "BAPCO refinery, Bahrain",
+        "gulfpub_operator": "Aramco/BAPCO",
+        "goit_project_id": "P0637",
+        "goit_pipeline_name": "Bahrain Saudi Arabia Oil Pipeline",
+        "goit_route_accuracy_at_export": "low",
+        "fuel": "OIL",
+        "confidence": "green",
+        "extracted_date": "2026-05-21"
+      }
+    }
+  ]
 }
