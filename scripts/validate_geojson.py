@@ -12,6 +12,10 @@ Checks each file for:
 Warnings (reported but do not fail validation):
   - a ProjectID property that does not match the filename (this is common
     when a route was copied from a related project)
+  - a route file (P####.geojson, not a -compressor-stations file) containing
+    Point/MultiPoint/Polygon/MultiPolygon features -- embedded valves,
+    markers, or traced station outlines. These are dropped when building the
+    normalized branch; station points belong in a -compressor-stations file.
 
 Empty routes (geometry: null) are valid -- see README.md.
 
@@ -47,6 +51,20 @@ GEOMETRY_TYPES = {
     "Point", "MultiPoint", "LineString", "MultiLineString",
     "Polygon", "MultiPolygon", "GeometryCollection",
 }
+
+LINE_GEOMETRY_TYPES = {"LineString", "MultiLineString"}
+
+
+def has_line_geometry(geom):
+    """True if a geometry is (or, for a GeometryCollection, contains) a
+    LineString or MultiLineString. Null geometries count as line-compatible
+    (empty-route placeholder)."""
+    if not isinstance(geom, dict):
+        return geom is None
+    gtype = geom.get("type")
+    if gtype == "GeometryCollection":
+        return any(has_line_geometry(g) for g in geom.get("geometries", []))
+    return gtype in LINE_GEOMETRY_TYPES
 
 
 def check_positions(coords, errors, path="coordinates"):
@@ -120,8 +138,10 @@ def validate_file(filepath):
             "P####.geojson or P####-compressor-stations.geojson"
         )
         project_id = None
+        is_route_file = False
     else:
         project_id = m.group(1)
+        is_route_file = m.group(2) is None
 
     try:
         text = filepath.read_text(encoding="utf-8")
@@ -158,12 +178,15 @@ def validate_file(filepath):
         errors.append("'features' must be an array")
         return errors, warnings
 
+    n_non_line = 0
     for i, feat in enumerate(features):
         fpath = f"features[{i}]"
         if not isinstance(feat, dict) or feat.get("type") != "Feature":
             errors.append(f"{fpath}: must be an object with type 'Feature'")
             continue
         check_geometry(feat.get("geometry"), errors, f"{fpath}.geometry")
+        if is_route_file and not has_line_geometry(feat.get("geometry")):
+            n_non_line += 1
         props = feat.get("properties")
         if isinstance(props, dict) and project_id is not None:
             pid = props.get("ProjectID")
@@ -171,6 +194,13 @@ def validate_file(filepath):
                 warnings.append(
                     f"{fpath}: ProjectID property {pid!r} does not match filename ({project_id})"
                 )
+
+    if n_non_line:
+        warnings.append(
+            f"{n_non_line} point/polygon feature(s) in a route file -- these are "
+            "dropped from the normalized branch; station points belong in a "
+            "-compressor-stations file"
+        )
 
     if filepath.resolve().is_relative_to(ROUTES_DIR):
         check_duplicate_id(filepath, errors)

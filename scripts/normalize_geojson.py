@@ -17,6 +17,11 @@ Normalization rules:
   - other feature properties and feature ids are preserved as-is, except
     properties whose value is an embedded JSON copy of a geometry (e.g. a
     GEOJSON field from a source-data export), which are dropped as redundant
+  - route files (P####.geojson, not -compressor-stations files) drop
+    Point/MultiPoint/Polygon/MultiPolygon features -- embedded valves, pig
+    launchers, markers, traced station outlines -- so the route layer is
+    lines only; the points stay available in the originals on main. As a
+    safeguard, nothing is dropped from a file with no line features at all.
   - files with no features become a single null-geometry feature, matching
     the empty-route convention in README.md
   - deterministic serialization: one feature per line, stable key order,
@@ -56,6 +61,9 @@ Compared to the original files on `main`, every file here:
 - carries a `ProjectID` property on every feature, matching the filename
   (where the original file carried a different `ProjectID`, that value is
   preserved as `SourceProjectID`)
+- if it is a route file (not a `-compressor-stations` file), contains only
+  line geometries -- embedded point features (valves, pig launchers,
+  markers) and traced station polygons are dropped
 
 If you want the original files exactly as researchers submitted them --
 original metadata, original coordinate precision -- use the `main` branch.
@@ -72,6 +80,21 @@ EMBEDDED_GEOMETRY_RE = re.compile(
     r'^\s*\{\s*"type"\s*:\s*"(%s)"\s*,\s*"(coordinates|geometries)"'
     % "|".join(GEOMETRY_TYPES)
 )
+
+
+LINE_GEOMETRY_TYPES = {"LineString", "MultiLineString"}
+
+
+def has_line_geometry(geom):
+    """True if a geometry is (or, for a GeometryCollection, contains) a
+    LineString or MultiLineString. Null geometries count as line-compatible
+    so empty-route placeholder features are never dropped."""
+    if geom is None:
+        return True
+    gtype = geom.get("type")
+    if gtype == "GeometryCollection":
+        return any(has_line_geometry(g) for g in geom.get("geometries", []))
+    return gtype in LINE_GEOMETRY_TYPES
 
 
 def is_embedded_geometry(value):
@@ -143,6 +166,15 @@ def normalize_file(src, precision):
 
     m = FILENAME_RE.match(src.name)
     project_id = m.group(1) if m else None
+    is_route_file = m is not None and m.group(2) is None
+
+    # Route layers are lines only: drop embedded point/polygon features
+    # (valves, markers, station outlines), but never from a file that has
+    # no line features at all -- emptying it would misread as "no route".
+    if is_route_file:
+        line_features = [f for f in features if has_line_geometry(f.get("geometry"))]
+        if line_features:
+            features = line_features
 
     if not features:
         features = [{"type": "Feature", "properties": {}, "geometry": None}]
