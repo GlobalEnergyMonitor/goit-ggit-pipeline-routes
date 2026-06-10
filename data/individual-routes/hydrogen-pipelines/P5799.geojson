@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P5799", "id": 1, "Name": "DHUNE"}, "geometry": {"type": "MultiLineString", "coordinates": [[[2.609222, 50.9316], [2.479437, 50.956639], [2.424241, 50.953714], [2.356789, 50.963649], [2.320629, 50.965164], [2.281192, 50.99486], [2.243216, 51.00933]]]}}
+]
+}

@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6532", "id": 1, "Name": "ManyIslandsSystem"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-110.04123, 54.338222], [-109.813504, 54.320354], [-109.689119, 54.34062], [-109.603118, 54.353249]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P6532", "id": 2, "Name": "ManyIslandsSystem"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-110.017372, 53.502514], [-109.945798, 53.450614], [-109.94144, 53.399275]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P6532", "id": 3, "Name": "ManyIslandsSystem"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-110.03794, 53.225143], [-109.96472, 53.224158], [-109.960984, 53.249687]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P6532", "id": 4, "Name": "ManyIslandsSystem"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-110.037991, 52.250585], [-109.967341, 52.26032], [-109.942559, 52.263679], [-109.710509, 52.316327], [-109.521291, 52.335434], [-109.139337, 52.433171]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P6532", "id": 6, "Name": "ManyIslandsSystem"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-108.972968, 48.98799], [-108.908628, 49.056677], [-108.745495, 49.207498], [-108.263399, 49.693656], [-108.238718, 49.716003], [-108.029755, 49.915597], [-107.852054, 50.097484], [-107.709055, 50.221022], [-107.39903, 50.447052], [-107.314838, 50.532463]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P6532", "id": 7, "Name": "ManyIslandsSystem"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-102.633452, 49.317484], [-102.632503, 49.114696], [-102.57656, 49.054349], [-102.587762, 49.009948]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P6532", "id": 8, "Name": "ManyIslandsSystem"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-102.100622, 51.875877], [-101.688056, 51.875613], [-101.559717, 51.888817]]]}}
+]
+}

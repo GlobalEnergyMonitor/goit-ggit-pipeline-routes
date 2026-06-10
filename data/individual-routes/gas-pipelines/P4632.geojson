@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4632", "name": "输气管道路径"}, "geometry": {"type": "LineString", "coordinates": [[111.680808, 38.366988], [111.574151, 38.257446]]}}
+]
+}

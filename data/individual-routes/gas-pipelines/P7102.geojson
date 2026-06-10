@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7102", "id": null, "name": "nigeria-libya-pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[5.713047, 5.574694], [8.534712, 11.989088], [13.003333, 22.529045], [12.113564, 32.914163]]]}}
+]
+}

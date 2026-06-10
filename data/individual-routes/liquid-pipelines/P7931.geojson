@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7931", "OBJECTID": 445, "FeatureUID": "CbI_458", "InfSource1": "Cross-border Information (London) Ltd. and the African Energy Live Data platform (https://www.africa-energy.com/live-data), accessed 2020-07-31.", "FeatureTyp": "Pipeline", "DsgAttr01": "Refined Product", "DsgAttr02": "Lagos", "DsgAttr03": "Kano", "DsgAttr04": 1080, "Shape_Length": 9.772442210411699}, "geometry": {"type": "MultiLineString", "coordinates": [[[3.389963, 6.411062], [3.214289, 6.829353], [3.631083, 6.848591], [4.884911, 6.754532], [5.62894, 6.342168], [6.028835, 6.295414], [6.271624, 7.065604], [6.677223, 7.537954], [7.182715, 9.255347], [7.404891, 10.522755], [7.694236, 11.135119], [8.539019, 11.996487]]]}}
+]
+}

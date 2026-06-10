@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P3185", "id": 1, "Name": "ThreeRiversInterconnection", "Type": "Expansion"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-88.293883, 41.411213], [-88.293906, 41.410756], [-88.294507, 41.410327], [-88.294406, 41.402502], [-88.293942, 41.393698], [-88.289004, 41.388771], [-88.288975, 41.38845], [-88.280607, 41.383786], [-88.279847, 41.375072]]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4624"}, "geometry": {"type": "LineString", "coordinates": [[112.961128, 38.382185], [113.505035, 38.899594]]}}
+]
+}

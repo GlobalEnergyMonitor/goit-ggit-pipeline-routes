@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P5011", "id": 5011, "Type": "Gas pipeline", "Name": "Cangzhou-Luquan Trunk"}, "geometry": {"type": "MultiLineString", "coordinates": [[[114.343815, 38.19832], [115.406109, 38.277149], [117.019294, 38.2073]]]}}
+]
+}

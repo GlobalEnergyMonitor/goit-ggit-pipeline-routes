@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P3664", "PrjName": "Lake Charles LNG Pipeline Modifications Project", "OGW_ID": "4758", "Res": "Medium", "DataSrce": "FERC FInal Environmental Impact Statement", "SrceDate": 2015, "SrceLink": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150814-4001&optimized=false", "DigName": "LM", "Method": "Georeferenced", "DigDate": "2022-09-13", "Notes": null, "Shape_Leng": 33026.4414023, "Additional": 2600.0, "AffectedSt": "LA, MS, AR", "Miles": 17.9, "PipelineDi": "24, 42", "ProductTyp": "Natural Gas", "ProductUni": "MMscf/d", "ProjectTyp": "Expansion", "Mile_check": 18}, "geometry": {"type": "MultiLineString", "coordinates": [[[-92.966142, 30.201888], [-92.958033, 30.191925], [-92.942211, 30.172185], [-92.930811, 30.157264], [-92.929218, 30.154726], [-92.918977, 30.14366], [-92.909502, 30.133154], [-92.902186, 30.125778]], [[-93.041136, 30.301815], [-93.035894, 30.313365], [-93.028998, 30.327564], [-93.025647, 30.334812], [-93.014475, 30.34339], [-93.013859, 30.34349], [-92.995638, 30.359047], [-92.982463, 30.370448], [-92.977455, 30.375234], [-92.962393, 30.388128], [-92.952994, 30.396103], [-92.935389, 30.411386], [-92.921251, 30.423312]]]}}
+]
+}

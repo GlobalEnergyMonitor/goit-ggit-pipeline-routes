@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6606", "id": 6606, "Type": "Gas pipeline", "Name": "Awat Branch"}, "geometry": {"type": "MultiLineString", "coordinates": [[[80.348883, 40.659073], [79.915221, 40.839562]]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7489", "id": 1, "Name": "Judith Gas Pipeline Onshore"}, "geometry": {"type": "LineString", "coordinates": [[148.436846, -37.711765], [148.417934, -37.801121]]}}
+]
+}

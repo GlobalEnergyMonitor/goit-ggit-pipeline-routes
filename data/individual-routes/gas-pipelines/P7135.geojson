@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7135", "id": 6, "Name": "LoughReaExt", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-8.707985, 53.237996], [-8.568196, 53.202006]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7135", "id": 1, "Name": "P2W", "Type": "lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-7.304492, 53.4626], [-7.31298, 53.515951]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7135", "id": 2, "Name": "P2W", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-7.497062, 53.426125], [-7.48947, 53.293359]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7135", "id": 3, "Name": "P2W", "Type": "lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-8.45906, 53.308757], [-8.390721, 53.168023]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7135", "id": 5, "Name": "P2W", "Type": "lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-6.813223, 53.493607], [-6.817532, 53.485645], [-6.858854, 53.418449]]]}}
+]
+}

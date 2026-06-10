@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4992", "name": "洛香至榕江天然气管道", "status": "规划中", "operator": "贵州东黎能源投资股份有限公司", "length": "约80公里（估算）", "pressure": "6.3MPa（预计）", "diameter": "DN300-DN400（预计）"}, "geometry": {"type": "LineString", "coordinates": [[109.123551, 25.907228], [108.686785, 25.94229], [108.905373, 25.967681], [108.69322, 26.05368], [108.552411, 26.007604]]}}
+]
+}

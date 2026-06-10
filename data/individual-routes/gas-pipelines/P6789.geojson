@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6789", "Name": "Line 1", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null}, "geometry": {"type": "LineString", "coordinates": [[56.137106, 46.007968], [55.181296, 45.328532]]}}
+]
+}

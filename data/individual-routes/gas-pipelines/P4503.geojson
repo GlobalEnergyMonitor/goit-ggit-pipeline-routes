@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4503", "id": 4503, "Type": "Gas pipeline", "Name": "Kaiyuan–Mengzi Branch"}, "geometry": {"type": "MultiLineString", "coordinates": [[[103.328922, 23.55745], [103.328922, 23.55745], [103.356691, 23.423222], [103.373853, 23.395391], [103.399119, 23.349265], [103.435197, 23.311075], [103.453223, 23.291975], [103.466344, 23.182026], [103.466344, 23.182026]]]}}
+]
+}

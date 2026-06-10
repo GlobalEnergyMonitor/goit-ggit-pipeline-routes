@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6296", "id": 1, "Name": "Constanta-Ploesti"}, "geometry": {"type": "MultiLineString", "coordinates": [[[28.669767, 44.346512], [27.593917, 44.626719], [26.017141, 44.909612]]]}}
+]
+}

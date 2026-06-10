@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P3611", "id": 1, "Name": "FoothillsZone8WPD2023", "Type": "Expansion"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-114.78557, 49.617449], [-114.794534, 49.57051], [-114.814354, 49.514532], [-114.773876, 49.449316], [-114.840457, 49.419469], [-114.87503, 49.338584]]]}}
+]
+}

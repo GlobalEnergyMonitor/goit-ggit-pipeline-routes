@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4848", "id": 4848, "Type": "Pipeline", "Name": "Hangzhou-Huzhou Gas Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[120.116062, 30.339493], [120.051859, 30.463143], [120.023324, 30.746112], [120.025702, 30.788913], [119.918697, 30.981522]]]}}
+]
+}

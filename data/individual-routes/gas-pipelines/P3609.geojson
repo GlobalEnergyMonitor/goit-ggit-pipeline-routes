@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P3609", "id": 1, "Name": "WestPathDelivery2023TurnerValley", "Type": "Expansion"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-114.383104, 50.892227], [-114.366735, 50.867022], [-114.357349, 50.767788], [-114.327515, 50.692497]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P3609", "id": 2, "Name": "WestPathDelivery2023Longview", "Type": "Expansion"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-114.276883, 50.524808], [-114.252377, 50.457168]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P3609", "id": 3, "Name": "WestPathDelivery2023Lundbreck", "Type": "Expansion"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-114.30508, 49.635893], [-114.347937, 49.615399], [-114.401116, 49.607083]]]}}
+]
+}

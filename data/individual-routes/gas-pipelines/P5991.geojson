@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P5991", "SourceProjectID": "1", "Name": "Galilee Gas Pipeline - Updated Route"}, "geometry": {"type": "LineString", "coordinates": [[144.47488, -22.925219], [144.684828, -23.725286], [144.842289, -24.596856], [144.947263, -25.063676], [145.073232, -25.206227], [145.034316, -25.657885], [145.244353, -26.004476], [145.014829, -26.80677]]}}
+]
+}

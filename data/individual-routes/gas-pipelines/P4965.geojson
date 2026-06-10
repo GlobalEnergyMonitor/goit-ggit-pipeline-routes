@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4965", "id": 4965, "Type": "Gas pipeline", "Name": "Dejiang-Sinan-Yuqing-Huangping-#50 valve chamber gas pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[108.117877, 28.256747], [108.234808, 27.928002], [107.877799, 27.231167], [107.894533, 26.879452], [107.951135, 25.598508]]]}}
+]
+}

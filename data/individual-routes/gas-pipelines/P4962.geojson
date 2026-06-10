@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4962", "name": "正安至习水天然气支线管道", "description": "贵州省天然气支线管道"}, "geometry": {"type": "LineString", "coordinates": [[107.459273, 28.551342], [107.902694, 28.555354], [106.829028, 28.132323], [106.227187, 28.30228]]}}
+]
+}

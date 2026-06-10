@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7539", "id": 1, "Name": "Rihab-Jaber"}, "geometry": {"type": "LineString", "coordinates": [[36.091097, 32.325361], [36.104258, 32.347823], [36.131291, 32.400512], [36.143352, 32.427197], [36.175682, 32.468623], [36.190873, 32.499976], [36.194428, 32.512787]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6649", "layer": "-5", "location": "underground", "man_made": "pipeline", "substance": "gas", "name": "Trans Mediterranean Pipeline"}, "geometry": {"type": "LineString", "coordinates": [[11.055762, 37.017698], [12.532731, 37.658391], [12.540783, 37.667496]]}}
+]
+}

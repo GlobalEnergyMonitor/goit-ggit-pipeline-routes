@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6054", "full_id": "w220018056", "osm_id": "220018056", "osm_type": "way", "man_made": "pipeline", "oneway": null, "name": null, "layer": null, "usage": null, "location": null, "operator": null, "substance": "oil", "submarine": "yes", "seamark:type": "pipeline_submarine", "seamark:pipeline_submarine:product": "oil", "seamark:pipeline_submarine:category": "supply"}, "geometry": {"type": "LineString", "coordinates": [[49.471352, 29.067228], [49.45673, 29.018088]]}}
+]
+}

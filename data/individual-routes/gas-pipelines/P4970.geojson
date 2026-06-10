@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4970", "id": 4970, "Type": "Gas pipeline", "Name": "玉屏-新晃输气管道"}, "geometry": {"type": "MultiLineString", "coordinates": [[[108.907494, 27.23364], [109.167624, 27.352219]]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7939", "OBJECTID": 447, "FeatureUID": "CbI_460", "InfSource1": "Cross-border Information (London) Ltd. and the African Energy Live Data platform (https://www.africa-energy.com/live-data), accessed 2020-07-31.", "FeatureTyp": "Pipeline", "DsgAttr01": "Refined Product", "DsgAttr02": "Enugu", "DsgAttr03": "Yola", "DsgAttr04": 644, "Shape_Length": 5.840712758216997}, "geometry": {"type": "MultiLineString", "coordinates": [[[7.543713, 6.451936], [8.541852, 7.714825], [12.499676, 9.210487]]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4566", "id": 4566, "Type": "Gas pipeline", "Name": "呼张延管线集宁-延庆段"}, "geometry": {"type": "MultiLineString", "coordinates": [[[113.161944, 40.811896], [115.503896, 40.430742]]]}}
+]
+}

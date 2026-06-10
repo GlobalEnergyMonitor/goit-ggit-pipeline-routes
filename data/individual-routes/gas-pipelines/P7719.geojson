@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7719", "id": 1, "Name": "Central Rich and Lean"}, "geometry": {"type": "LineString", "coordinates": [[59.419667, 22.63503], [59.336574, 22.50799], [59.204992, 22.415287], [59.090657, 22.435517]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6640", "id": 3, "Name": "AtlantHYC 3 (offshore)"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-2.258575, 47.2824], [-3.145515, 47.014806]]]}}
+]
+}

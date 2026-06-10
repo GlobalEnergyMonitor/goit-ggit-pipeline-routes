@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P3651", "id": 1, "Name": "Gwalia Lateral"}, "geometry": {"type": "LineString", "coordinates": [[121.325856, -28.914733], [121.321067, -28.904633], [121.316931, -28.892245], [121.314515, -28.885141]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P5094", "id": 5094, "Type": "Gas pipeline", "Name": "Luzhou-Zhaotong-Bijie-Baise pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[105.349616, 28.869521], [103.775568, 27.348974], [105.253245, 27.301409], [106.570999, 23.922439]]]}}
+]
+}

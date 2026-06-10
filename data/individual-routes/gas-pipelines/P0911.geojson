@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P0911", "felt:color": "#723FA6", "felt:id": "NdzTQJeOTyCSooIRZKXV0A", "felt:locked": false, "felt:ordering": 1721845109992036, "felt:routeMode": "NONE", "felt:showLength": false, "felt:strokeOpacity": 1, "felt:strokeStyle": "solid", "felt:strokeWidth": 4, "felt:type": "Path"}, "geometry": {"type": "MultiLineString", "coordinates": [[[77.970925, 9.210084], [78.212532, 9.273155], [78.341146, 9.282011], [78.603743, 9.362674]]]}}
+]
+}

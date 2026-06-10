@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P1955", "source": "gulfpub", "gulfpub_objectid": 4102, "gulfpub_name": "Trans-Arabian Pipeline / Tapline", "gulfpub_status": "Operating", "gulfpub_diameter_in": 30.0, "gulfpub_length_km": 506.9, "gulfpub_start": "Al-Dammām, Saudia Arabia", "gulfpub_end": "Al-Qayṣūmah, Saudi Arabia", "gulfpub_operator": "Aramco", "goit_project_id": "P1955", "goit_pipeline_name": "Trans-Arabian Oil Pipeline", "goit_route_accuracy_at_export": "no route", "fuel": "OIL", "confidence": "green", "extracted_date": "2026-05-21"}, "geometry": {"type": "LineString", "coordinates": [[46.039619, 28.347481], [46.716232, 28.115415], [47.13462, 27.963049], [47.898168, 27.759595], [48.627092, 27.481955], [48.937674, 27.300725], [49.002273, 27.269503], [49.238059, 27.087549], [49.496124, 26.973875], [49.517208, 26.955914], [49.56695, 26.92585], [49.6466, 26.88134], [49.799247, 26.688123], [49.955785, 26.50686], [49.995498, 26.485755], [50.043136, 26.446057], [50.090051, 26.376858], [50.11218, 26.348766], [50.124025, 26.321616]]}}
+]
+}

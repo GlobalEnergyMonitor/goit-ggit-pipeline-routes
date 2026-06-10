@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4839", "id": 4839, "Type": "Gas pipeline", "Name": "Shangyu-Xinchang Gas Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[120.887753, 29.582077], [120.878353, 29.591477], [120.859552, 29.699581], [120.850152, 29.741883], [120.854852, 29.812385], [120.845452, 29.868788], [120.840751, 29.887588], [120.876984, 30.011345]]]}}
+]
+}

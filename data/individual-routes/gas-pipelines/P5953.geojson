@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P5953", "id": 5953, "Type": "Pipeline", "Name": "Ningbo-Taizhou-Wenzhou Gas Pipeline Cangnan Branch"}, "geometry": {"type": "MultiLineString", "coordinates": [[[120.98862, 28.043965], [120.846588, 27.858885], [120.725617, 27.737914], [120.589201, 27.628116], [120.509348, 27.4917]]]}}
+]
+}

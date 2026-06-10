@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P3395", "id": 1, "Name": "Rosebank", "Type": "Mainline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-3.80831, 60.99035], [-3.611619, 60.968464], [-2.992673, 60.776105], [-2.889816, 60.759361], [-2.855531, 60.755835], [-2.745456, 60.721436], [-2.58305, 60.639258], [-2.471008, 60.608811]]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6873", "id": 6873, "Type": "Gas pipeline", "Name": "Meitan-Sinan Branch Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[107.396966, 27.738064], [107.703493, 27.956896], [108.097931, 28.243549], [108.208697, 27.960736], [108.20872, 27.96071]]]}}
+]
+}

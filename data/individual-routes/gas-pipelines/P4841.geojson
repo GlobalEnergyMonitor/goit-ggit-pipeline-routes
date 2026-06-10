@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4841", "id": 4841, "Type": "Gas pipeline", "Name": "Xiaoshan-Yiwu Natural Gas Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[120.265868, 30.151641], [120.265868, 30.151641], [120.196456, 29.976833], [120.130083, 29.871239], [120.118015, 29.687204], [120.099913, 29.647983], [119.924928, 29.337235]]]}}
+]
+}

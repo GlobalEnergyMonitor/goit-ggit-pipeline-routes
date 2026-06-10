@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P5786", "OBJECTID": 203, "NOMBRE": "REVERSIÓN GASODUCTO NORTE", "longitud_km": 117.2, "pais": "ARGENTINA", "Shape__Length": 1.0671076341806467}, "geometry": {"type": "LineString", "coordinates": [[-63.560118, -33.322953], [-63.550421, -33.299973], [-63.514332, -33.166681], [-63.500864, -33.115399], [-63.490249, -33.07278], [-63.467846, -32.968643], [-63.434987, -32.844588], [-63.426296, -32.818808], [-63.287208, -32.291778]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4990", "id": 4990, "Type": "Gas pipeline", "Name": "Anlong-Wangmo Gas Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[105.442426, 25.099146], [105.44314, 25.097048], [105.803891, 24.984906], [106.092439, 25.161707]]]}}
+]
+}

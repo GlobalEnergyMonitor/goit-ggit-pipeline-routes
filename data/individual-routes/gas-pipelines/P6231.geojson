@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6231", "id": 6231, "Type": "Gas pipelien", "Name": "Dushanzi Branch"}, "geometry": {"type": "MultiLineString", "coordinates": [[[84.977278, 44.375151], [85.811272, 44.680359], [85.811272, 44.680359]]]}}
+]
+}

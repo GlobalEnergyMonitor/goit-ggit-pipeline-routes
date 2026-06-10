@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P5979", "id": 1, "Name": "Beetaloo-McArthur River Connecting Pipeline"}, "geometry": {"type": "LineString", "coordinates": [[135.547991, -17.043832], [135.546458, -17.013048], [135.538792, -16.951464], [135.541858, -16.861985], [135.537259, -16.831171], [135.534193, -16.784206], [135.549524, -16.741635], [135.546197, -16.697641]]}}
+]
+}

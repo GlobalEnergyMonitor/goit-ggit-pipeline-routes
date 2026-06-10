@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7529", "id": 1, "Name": "Kupe Gas Pipeline"}, "geometry": {"type": "LineString", "coordinates": [[174.172894, -39.477452], [174.163288, -39.578074], [174.162961, -39.5855], [174.148913, -39.635492], [174.088437, -39.864532]]}}
+]
+}

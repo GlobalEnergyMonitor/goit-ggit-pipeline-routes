@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7930", "OBJECTID": 454, "FeatureUID": "CbI_467", "InfSource1": "Cross-border Information (London) Ltd. and the African Energy Live Data platform (https://www.africa-energy.com/live-data), accessed 2020-07-31.", "FeatureTyp": "Pipeline", "DsgAttr01": "Refined Product", "DsgAttr02": "Zaria", "DsgAttr03": "Gusau", "DsgAttr04": 160, "Shape_Length": 1.4521330681593136}, "geometry": {"type": "MultiLineString", "coordinates": [[[7.694751, 11.135645], [6.672609, 12.167108]]]}}
+]
+}

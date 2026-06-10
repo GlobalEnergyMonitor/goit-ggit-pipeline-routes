@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P0220", "id": null}, "geometry": {"type": "Point", "coordinates": [-80.757622, 37.867842]}},
+{"type": "Feature", "properties": {"ProjectID": "P0220", "id": null}, "geometry": {"type": "Point", "coordinates": [-80.502727, 38.722536]}},
+{"type": "Feature", "properties": {"ProjectID": "P0220", "id": null}, "geometry": {"type": "Point", "coordinates": [-80.549888, 39.557175]}}
+]
+}

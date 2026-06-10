@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P5669", "id": 1, "Name": "Lower Zakum–Das Island Gas Pipeline"}, "geometry": {"type": "LineString", "coordinates": [[53.613017, 24.858319], [52.874978, 25.153975], [52.874978, 25.153975]]}}
+]
+}

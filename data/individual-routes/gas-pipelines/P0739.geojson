@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P0739"}, "geometry": {"type": "LineString", "coordinates": [[64.534295, 39.721974], [65.303753, 40.420996], [65.913647, 40.32357], [68.412245, 40.278556], [68.451593, 40.786951], [68.608985, 41.010016], [68.837741, 41.182246], [69.242068, 41.361742], [69.498506, 41.980616], [69.832689, 42.150695], [71.324598, 42.887152], [72.09706, 42.98866], [72.321662, 42.991035], [72.718299, 42.909911], [73.205704, 42.874762], [74.545686, 42.856228], [75.081585, 43.389203], [75.534018, 43.333362], [75.683406, 43.314735], [75.747429, 43.330258], [75.901086, 43.31784], [76.050474, 43.317839], [76.242545, 43.268144], [76.315105, 43.218407], [76.605987, 43.206444], [76.646068, 43.250242], [76.708695, 43.279423], [76.751281, 43.26301]]}},
+{"type": "Feature", "properties": {"ProjectID": "P0739"}, "geometry": {"type": "LineString", "coordinates": [[72.093774, 42.989038], [72.091086, 43.003291]]}},
+{"type": "Feature", "properties": {"ProjectID": "P0739"}, "geometry": {"type": "LineString", "coordinates": [[69.914884, 42.356115], [70.032407, 42.253233]]}},
+{"type": "Feature", "properties": {"ProjectID": "P0739", "SourceProjectID": "P5810"}, "geometry": null},
+{"type": "Feature", "properties": {"ProjectID": "P0739", "SourceProjectID": "P5810"}, "geometry": null},
+{"type": "Feature", "properties": {"ProjectID": "P0739", "SourceProjectID": "P5810"}, "geometry": null},
+{"type": "Feature", "properties": {"ProjectID": "P0739", "SourceProjectID": "P5810"}, "geometry": null}
+]
+}

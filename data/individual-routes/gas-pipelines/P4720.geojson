@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4720", "id": 4720, "Type": "Gas pipeline", "Name": "Qinzhou-Fangchenggang Branch"}, "geometry": {"type": "MultiLineString", "coordinates": [[[108.856196, 22.278097], [108.808993, 22.235645], [108.77119, 22.186276], [108.709585, 22.095026], [108.616056, 21.949813], [108.600559, 21.781011]]]}}
+]
+}

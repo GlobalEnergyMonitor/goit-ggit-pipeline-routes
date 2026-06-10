@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P2828", "id": 1, "Name": "CorkDublinPipeline", "Type": "Mainline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-6.205845, 53.531656], [-6.242601, 53.508026], [-6.370168, 53.432093], [-6.421607, 53.342513], [-6.448913, 53.304003], [-6.570274, 53.197354], [-6.763833, 53.142345], [-6.757664, 53.070588], [-6.807018, 52.963426], [-6.852368, 52.849101], [-6.862695, 52.774193], [-6.990067, 52.642795], [-7.275793, 52.556022], [-7.348085, 52.509952], [-7.587337, 52.435511], [-7.847244, 52.317826], [-8.143297, 52.225139], [-8.153625, 52.120634], [-8.093258, 51.844208], [-8.214867, 51.88339], [-8.251218, 51.924168], [-8.275672, 51.892772], [-8.379437, 51.880942], [-8.483202, 51.855231], [-8.488489, 51.794366], [-8.608777, 51.768606], [-9.006653, 51.663369]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P2828", "id": 2, "Name": "DublinCorkPipeline", "Type": "Mainline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-8.608777, 51.768606], [-8.447542, 51.707633]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P2828", "id": 3, "Name": "NaasSpur", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-6.610269, 53.185993], [-6.65047, 53.218975], [-6.723066, 53.29356]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P2828", "id": 4, "Name": "PortlaoiseSpur", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-6.65047, 53.218975], [-6.871414, 53.177377], [-7.032387, 53.113958], [-7.183891, 53.166971], [-7.283315, 53.040008], [-6.939275, 53.000137], [-6.807018, 52.963426]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P2828", "id": 5, "Name": "CushSpur", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-7.032387, 53.113958], [-6.939275, 53.000137]]]}}
+]
+}

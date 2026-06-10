@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P3188", "PrjName": "East Lateral Xpress Project", "OGW_ID": "3289", "Res": "Unknown", "DataSrce": "SONRIS Ref. P20200572", "SrceDate": 2020, "SrceLink": "http://ucmwww.dnr.state.la.us/ucmsearch/FindDocuments.aspx?idx=xrefnum&val=P20200572&qtype=eq", "DigName": "LM", "Method": "Shapefile from Source", "DigDate": "2022-09-13", "Notes": null, "Shape_Leng": 14931.3331013, "Additional": 725.0, "AffectedSt": "LA", "Miles": 8.1, "PipelineDi": "30", "ProductTyp": "Natural Gas", "ProductUni": "MMscf/d", "ProjectTyp": "Lateral", "Mile_check": 8}, "geometry": {"type": "MultiLineString", "coordinates": [[[-89.927045, 29.436727], [-89.927295, 29.436377], [-89.926695, 29.435938], [-89.926018, 29.435441], [-89.926024, 29.432611], [-89.926034, 29.427291], [-89.926046, 29.420962], [-89.926062, 29.41281], [-89.92608, 29.403749], [-89.926126, 29.379785], [-89.926186, 29.348865], [-89.926234, 29.324295], [-89.926241, 29.320427]]]}}
+]
+}

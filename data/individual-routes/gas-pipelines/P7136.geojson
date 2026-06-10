@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7136", "id": 1, "Name": "ListowelExtension", "Type": "Lateral", "length_km": 37}, "geometry": {"type": "MultiLineString", "coordinates": [[[-9.049313, 52.595302], [-9.055169, 52.589396], [-9.082397, 52.589607], [-9.097724, 52.572931], [-9.199906, 52.557247], [-9.370692, 52.501431], [-9.420302, 52.452766], [-9.456935, 52.436982], [-9.484681, 52.44723]]]}}
+]
+}

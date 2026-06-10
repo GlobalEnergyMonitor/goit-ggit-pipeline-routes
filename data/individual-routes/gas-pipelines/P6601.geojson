@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6601", "id": 6601, "Type": "Gas pipeline", "Name": "Uqturpan County Branch"}, "geometry": {"type": "MultiLineString", "coordinates": [[[79.23657, 41.209652], [80.144603, 41.04607], [80.143699, 41.04607]]]}}
+]
+}

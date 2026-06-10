@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7294", "SourceProjectID": "P7293", "fid": null, "Fuel": "Oil", "StartPrefe": null, "EndState/P": null, "CountriesO": "Algeria", "Wiki": null, "PipelineNa": "Haoudh El Hamr-SP1 Bis Djmea Oil Pipeline", "SegmentNam": null, "Status": "construction", "Owner": null, "Parent": null, "OwnerEntit": null, "ProposalYe": null, "Constructi": null, "Diameter": null, "DiameterUn": null, "StartYear1": null, "StartYear2": null, "StartYear3": null, "CancelledY": null, "DelayType": null, "StopYear": null, "ShelvedYea": null, "Capacity": null, "CapacityUn": null, "CapacityBO": null, "LengthKnow": null, "LengthKn_1": null, "LengthKn_2": null, "LengthEsti": null, "LengthMerg": null, "Diameter [": null, "FuelSource": null, "FuelSour_1": null, "StartLocat": null, "StartCount": null, "StartSubRe": null, "StartRegio": null, "EndLocatio": null, "EndPrefect": null, "EndCountry": null, "CostUSD": null, "EndRegion": null, "CostEuro": null, "OtherLangu": null, "EndSubRegi": null, "RouteType": null, "RouteAccur": null, "Cost": null, "CostUnits": null, "LastUpdate": null}, "geometry": {"type": "MultiLineString", "coordinates": [[[5.887573, 33.547713], [5.950047, 33.360065], [5.96879, 33.093535], [6.01877, 32.65278], [6.062502, 32.225698], [6.09374, 31.934554], [6.09374, 31.71426]]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P2251", "id": 1, "Name": "Matola Gas Company Pipeline", "Type": "Main"}, "geometry": {"type": "MultiLineString", "coordinates": [[[31.958525, -25.415342], [32.11079, -25.508985], [32.201267, -25.554784], [32.245402, -25.612505], [32.300571, -25.676166], [32.340292, -25.727864], [32.410908, -25.81133], [32.472697, -25.884811], [32.54552, -25.964198]]]}}
+]
+}

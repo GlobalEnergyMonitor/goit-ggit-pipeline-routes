@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P5977", "id": 1, "Name": "Sturt Plateau Pipeline"}, "geometry": {"type": "LineString", "coordinates": [[133.324729, -16.74822], [133.419076, -16.71219], [133.50029, -16.762514], [133.812005, -16.817397]]}}
+]
+}

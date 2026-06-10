@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7120", "id": 1, "Name": "LimerickSpur", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-8.143297, 52.225139], [-8.540914, 52.455486], [-8.645387, 52.508381], [-8.624026, 52.644684], [-8.915963, 52.692182]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7120", "id": 2, "Name": "LimerickSpur", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-8.835891, 52.679159], [-8.859, 52.768718]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7120", "id": 3, "Name": "Mallow Spur", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-8.540914, 52.455486], [-8.557688, 52.376577], [-8.674118, 52.312775], [-8.70271, 52.236964], [-8.640761, 52.134707]]]}}
+]
+}

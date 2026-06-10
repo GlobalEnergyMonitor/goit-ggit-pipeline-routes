@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7524", "name": "丹寨至雷山天然气管道", "status": "建设中", "operator": "贵州东黎能源投资股份有限公司", "length": "32.53公里", "design_pressure": "6.3MPa", "diameter": "DN300", "annual_capacity": "约1.2亿立方米"}, "geometry": {"type": "LineString", "coordinates": [[107.929761, 26.886397], [107.956895, 26.886348], [107.993049, 26.899756], [108.079565, 26.953126], [108.117308, 27.005019]]}}
+]
+}

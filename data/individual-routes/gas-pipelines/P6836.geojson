@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6836", "id": 6836, "Type": "Gas pipeline", "Name": "Jianzha Branch"}, "geometry": {"type": "MultiLineString", "coordinates": [[[101.813181, 35.805818], [102.014452, 35.943415]]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6795", "id": 1, "Name": "HY-FEN to GeoH2"}, "geometry": {"type": "MultiLineString", "coordinates": [[[4.910922, 43.648887], [5.102995, 43.666513], [5.195636, 43.710087], [5.32983, 43.727235], [5.583744, 43.763515], [5.690428, 43.841595], [5.757115, 43.838915]]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4972", "id": 4972, "Type": "Gas pipeline", "Name": "Zheng'an-Weng'an-Fuquan-#45 valve chamber pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[107.432757, 28.550456], [107.462139, 27.077492], [107.504583, 26.692571], [107.951135, 25.598508]]]}}
+]
+}

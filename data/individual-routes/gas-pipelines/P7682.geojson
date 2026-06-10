@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7682", "id": 1, "Name": "ESTIDAMA Package 6"}, "geometry": {"type": "LineString", "coordinates": [[55.421441, 24.520179], [55.801049, 24.74512]]}}
+]
+}

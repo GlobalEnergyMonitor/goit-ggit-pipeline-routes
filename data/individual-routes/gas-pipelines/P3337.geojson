@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P3337", "id": 1, "Name": "Mozambique-Richards Bay Gas Pipeline", "Type": "Main"}, "geometry": {"type": "MultiLineString", "coordinates": [[[32.107941, -28.752717], [32.153038, -28.435131], [32.179422, -28.028338], [32.192614, -27.725149], [32.23219, -27.36255], [32.258574, -27.198404], [32.324534, -26.951732], [32.36411, -26.881155]]]}}
+]
+}

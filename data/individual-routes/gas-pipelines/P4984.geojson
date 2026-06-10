@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4984", "id": 4984, "Type": "Gas pipeline", "Name": "阿拉-万山输气管道"}, "geometry": {"type": "MultiLineString", "coordinates": [[[109.215906, 27.514311], [109.192523, 27.70496], [109.383401, 27.904125]]]}}
+]
+}

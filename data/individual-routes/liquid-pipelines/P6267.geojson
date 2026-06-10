@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6267", "id": 1, "Name": "Porto Marghera-Mantova"}, "geometry": {"type": "MultiLineString", "coordinates": [[[12.250517, 45.445659], [11.691465, 45.238249], [10.8217, 45.14839]]]}}
+]
+}

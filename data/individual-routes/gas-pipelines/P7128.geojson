@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7128", "id": 1, "Name": "McLeodSouth", "Type": "Expansion"}, "geometry": {"type": "LineString", "coordinates": [[-116.54735, 53.561778], [-116.554579, 53.572492], [-116.689071, 53.641617], [-116.737024, 53.669471], [-116.765236, 53.681343]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P3942", "PrjName": "Northern Lights 2021 Expansion", "OGW_ID": "3344", "Res": "Medium", "DataSrce": "FERC Application", "SrceDate": 2020, "SrceLink": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200731-5243&optimized=false", "DigName": "LM", "Method": "Georeferenced", "DigDate": "2022-04-21", "Notes": "Georeferenced from maps included in 2020 application. Route slightly modified since application, hence slightly differing mileage.", "Shape_Leng": 5956.91784782, "Additional": 45.6, "AffectedSt": "MN", "Miles": 1.43, "PipelineDi": "6, 12, 24", "ProductTyp": "Natural Gas", "ProductUni": "MMscf/d", "ProjectTyp": "Expansion", "Mile_check": 3}, "geometry": {"type": "MultiLineString", "coordinates": [[[-93.349482, 44.661081], [-93.343657, 44.658777], [-93.342749, 44.658437], [-93.34272, 44.658057], [-93.337375, 44.655733], [-93.333446, 44.654032], [-93.333386, 44.652795], [-93.332453, 44.652798], [-93.330553, 44.651433], [-93.330578, 44.651148], [-93.330039, 44.650122], [-93.328142, 44.649366], [-93.324882, 44.647873], [-93.318232, 44.645399]], [[-92.50047, 46.650129], [-92.500308, 46.650705], [-92.491913, 46.653585], [-92.4898, 46.653053], [-92.489543, 46.652602], [-92.489754, 46.652405]]]}}
+]
+}

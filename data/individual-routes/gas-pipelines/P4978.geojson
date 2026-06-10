@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4978", "id": 4978, "Type": "Gas pipeline", "Name": "Sino-Myanmar Fuquan Branch Pipeline 47# Valve Chamber-Dushan-Sandu Gas Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[107.463384, 25.848571], [107.510831, 25.760501], [107.813415, 25.939039]]]}}
+]
+}

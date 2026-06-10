@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "id": 1214, "properties": {"ProjectID": "P0423", "OBJECTID": 1214, "nombre_gasoducto": "Toluca-pedro Escobedo", "longitud_km": 82.895, "pais": "MÉXICO", "diametro": null, "operador": " ", "anio_operacion": " ", "tramo": " ", "Shape__Length": 0.7739192200619254}, "geometry": {"type": "LineString", "coordinates": [[-99.633617, 19.344823], [-99.573557, 19.411222], [-99.548712, 19.547866], [-99.561134, 19.717636], [-99.598401, 19.833577], [-99.614964, 19.957798], [-99.625132, 20.057594], [-99.628131, 20.085294]]}}
+]
+}

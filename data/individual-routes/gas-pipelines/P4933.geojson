@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4933", "id": 4933, "Type": "Gas pipeline", "Name": "Yining-Khorgas Branch"}, "geometry": {"type": "MultiLineString", "coordinates": [[[80.40953, 44.211225], [81.475926, 43.970352]]]}}
+]
+}

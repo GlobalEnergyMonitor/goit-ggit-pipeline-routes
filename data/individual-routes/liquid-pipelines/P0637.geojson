@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P0637", "source": "gulfpub", "gulfpub_objectid": 391, "gulfpub_name": "AB-4 Pipeline", "gulfpub_status": "Operating", "gulfpub_diameter_in": 30.0, "gulfpub_length_km": 111.0, "gulfpub_start": "Abqaiq field, Saudi Arabia", "gulfpub_end": "BAPCO refinery, Bahrain", "gulfpub_operator": "Aramco/BAPCO", "goit_project_id": "P0637", "goit_pipeline_name": "Bahrain Saudi Arabia Oil Pipeline", "goit_route_accuracy_at_export": "low", "fuel": "OIL", "confidence": "green", "extracted_date": "2026-05-21"}, "geometry": {"type": "LineString", "coordinates": [[49.684508, 25.925474], [49.725246, 25.922539], [49.816594, 25.978924], [49.901311, 26.085746], [50.064416, 26.234565], [50.153707, 26.216706], [50.211434, 26.22331], [50.236195, 26.22436], [50.321234, 26.191195], [50.412226, 26.172486], [50.489062, 26.175346], [50.516824, 26.126565], [50.564531, 26.100022], [50.601801, 26.116892]]}}
+]
+}

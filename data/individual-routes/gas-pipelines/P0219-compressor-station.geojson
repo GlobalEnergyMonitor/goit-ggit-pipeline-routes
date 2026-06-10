@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P0219", "operator": "MOJAVE PIPELINE COMPANY L.L.C."}, "geometry": {"type": "Point", "coordinates": [-116.850463, 34.850879]}},
+{"type": "Feature", "properties": {"ProjectID": "P0219", "WEBSITE": "WITHIN 40 FEET", "NAICS_DESC": "TOPOCK - ARIZONA", "NUM_UNITS": "0", "CITY": "IMAGERY/OTHER", "STATE": "AZ", "EXP_POWER": "0", "STATUS": "USA", "VAL_DATE": "34.726327999", "OBJECTID": "1", "VAL_METHOD": "32031635", "COUNTYFIPS": "1548416", "OPERATOR": "NOT AVAILABLE", "ZIP4": "12240", "SOURCEDATE": "23095", "ADDRESS": "3", "LATITUDE": "0.0", "COMPID": "1418756", "SOURCE": "86436", "NAME": "MOHAVE", "GAS_COMPRE": "0", "PLANT_COST": "3", "EXP_FUEL": "-114", "GCOMPID": "92", "COUNTRY": "MOJAVE PIPELINE COMPANY L.L.C.", "OP_DATE_PE": "486210", "OP_COMP_HR": "4015", "EXP_OTHER": "0", "PIPECO": "Fri, 17 Jun 2022 00:00:00 GMT", "POSREL": "https://pipeportal.kindermorgan.com/portalui/DefaultKM.aspx?TSP=MOJD", "TYPE": "446", "CERT_HP": "0", "ZIP": "0", "COUNTY": "678398", "ELEC_COMPR": "0", "NAICS_CODE": "Fri, 20 Nov 2020 00:00:00 GMT", "OP_NUM_COM": "0", "LONGITUDE": "0.0"}, "geometry": {"type": "Point", "coordinates": [-114.463672, 34.726328]}}
+]
+}

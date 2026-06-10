@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4850", "id": 4850, "Type": "Pipeline", "Name": "Jinhua-Lishui-Wenzhou Gas Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[120.472203, 28.03993], [120.359945, 28.103908], [120.277185, 28.1818], [120.194424, 28.259693], [119.951011, 28.405741], [119.985089, 28.624812], [119.975352, 28.839016], [119.775754, 28.897435], [119.551813, 29.092166]]]}}
+]
+}

@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7552", "id": null}, "geometry": {"type": "MultiPoint", "coordinates": [[-73.706863, 5.808852]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7552", "id": null}, "geometry": {"type": "MultiPoint", "coordinates": [[-73.165081, 5.186941]]}}
+]
+}

@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P0472", "id": 1, "Name": "Panthere-Abidjan Pipeline", "Type": "main"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-4.808057, 5.042734], [-4.784301, 5.174187], [-4.42796, 5.218876], [-4.063701, 5.26356], [-4.067764, 5.32311]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P0472", "id": 2, "Name": "Foxtrox-Abidjan Pipeline", "Type": "Main"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-4.67344, 5.037475], [-4.671211, 5.183301], [-4.025914, 5.264636], [-4.021468, 5.316127]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P0472", "id": 3, "Name": "Mantra-Abidjan Pipeline", "Type": "Main"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-4.536182, 4.958589], [-4.536182, 4.979626], [-4.462275, 4.974367], [-4.443798, 5.021698], [-4.487612, 5.200779], [-4.019839, 5.261948], [-4.016464, 5.315718]]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P1340", "SourceProjectID": "P5895", "man_made": "pipeline"}, "geometry": {"type": "LineString", "coordinates": [[16.52205, 46.52584], [16.52306, 46.525417], [16.603245, 46.520951], [16.748319, 46.502542], [16.820571, 46.494353], [16.990588, 46.461006]]}}
+]
+}

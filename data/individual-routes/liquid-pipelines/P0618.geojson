@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P0618", "OBJECTID": 452, "FeatureUID": "CbI_465", "InfSource1": "Cross-border Information (London) Ltd. and the African Energy Live Data platform (https://www.africa-energy.com/live-data), accessed 2020-07-31.", "FeatureTyp": "Pipeline", "DsgAttr01": "Oil", "DsgAttr02": "Warri Refinery and Petrochemical Plant", "DsgAttr03": "Kaduna", "DsgAttr04": 604, "Shape_Length": 5.46165746625616}, "geometry": {"type": "MultiLineString", "coordinates": [[[5.716701, 5.565934], [6.029263, 6.344977], [6.264415, 7.065851], [6.239022, 7.56004], [6.747313, 7.795585], [6.783374, 7.922797], [7.174979, 9.252794], [7.400599, 10.523175]]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4968", "name": "玉屏-江口输气管道示意线"}, "geometry": {"type": "LineString", "coordinates": [[107.24314, 27.835431], [107.184704, 27.941952], [107.518954, 28.54547]]}}
+]
+}

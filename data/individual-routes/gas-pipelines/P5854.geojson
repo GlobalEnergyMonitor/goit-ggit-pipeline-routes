@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P5854", "id": "1", "Name": "Wafra-Station 171 Gas Pipeline"}, "geometry": {"type": "LineString", "coordinates": [[47.92987, 28.639464], [47.823672, 28.720482], [47.745435, 28.819123], [47.685418, 28.925175], [47.656498, 29.010833]]}}
+]
+}

@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6676", "id": 6676, "Type": "Gas pipeline", "Name": "Changling-Baicheng-Ulanhot branch "}, "geometry": {"type": "MultiLineString", "coordinates": [[[123.97642, 44.275075], [122.789802, 45.606991], [122.054052, 46.055223]]]}}
+]
+}

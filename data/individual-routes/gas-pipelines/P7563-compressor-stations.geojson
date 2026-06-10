@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7563", "id": null}, "geometry": {"type": "MultiPoint", "coordinates": [[-74.420399, 6.486254]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7563", "id": null}, "geometry": {"type": "MultiPoint", "coordinates": [[-74.391492, 6.475188]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7563", "id": null}, "geometry": {"type": "MultiPoint", "coordinates": [[-74.390123, 6.475064]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7563", "id": null}, "geometry": {"type": "MultiPoint", "coordinates": [[-74.387205, 6.516201]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7563", "id": null}, "geometry": {"type": "MultiPoint", "coordinates": [[-75.325971, 6.455465]]}}
+]
+}

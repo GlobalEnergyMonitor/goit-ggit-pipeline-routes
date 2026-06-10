@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7932", "OBJECTID": 451, "FeatureUID": "CbI_464", "InfSource1": "Cross-border Information (London) Ltd. and the African Energy Live Data platform (https://www.africa-energy.com/live-data), accessed 2020-07-31.", "FeatureTyp": "Pipeline", "DsgAttr01": "Refined Product", "DsgAttr02": "Kaduna", "DsgAttr03": "Maiduguri", "DsgAttr04": 727, "Shape_Length": 6.628030598970337}, "geometry": {"type": "MultiLineString", "coordinates": [[[7.405051, 10.523094], [8.879294, 9.891674], [9.850665, 10.317262], [11.171662, 10.274899], [12.191258, 10.613649], [13.159185, 11.846822]]]}}
+]
+}

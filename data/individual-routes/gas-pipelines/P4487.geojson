@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4487", "id": 4487, "Type": "Gas pipeline", "Name": "Nanning-Qinzhou Branch Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[108.545282, 22.868639], [108.551515, 22.714296], [108.554255, 22.577467], [108.583427, 22.522434], [108.621053, 22.403709], [108.644523, 22.315279], [108.668574, 22.192632], [108.698468, 22.143128], [108.708113, 22.12477]]]}}
+]
+}

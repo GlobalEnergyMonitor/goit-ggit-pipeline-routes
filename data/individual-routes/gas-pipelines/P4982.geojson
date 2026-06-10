@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4982", "id": 4982, "Type": "Gas pipeline", "Name": "Tianzhu-Congjiang Gas Pipeline(Liping-Congjiang Segment)"}, "geometry": {"type": "MultiLineString", "coordinates": [[[109.146834, 26.239962], [108.883604, 25.793504]]]}}
+]
+}

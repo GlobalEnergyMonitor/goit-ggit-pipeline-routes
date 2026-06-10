@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7934", "OBJECTID": 449, "FeatureUID": "CbI_462", "InfSource1": "Cross-border Information (London) Ltd. and the African Energy Live Data platform (https://www.africa-energy.com/live-data), accessed 2020-07-31.", "FeatureTyp": "Pipeline", "DsgAttr01": "Refined Product", "DsgAttr02": "Ore", "DsgAttr03": "Edo-Ekiti", "DsgAttr04": 111, "Shape_Length": 1.0032015263420575}, "geometry": {"type": "MultiLineString", "coordinates": [[[4.885271, 6.754332], [4.827948, 7.101687], [5.22752, 7.615825]]]}}
+]
+}

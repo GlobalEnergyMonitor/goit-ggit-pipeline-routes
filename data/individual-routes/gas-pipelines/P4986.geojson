@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4986", "id": 4986, "Type": "Gas pipeline", "Name": "Houba-Yanhe Gas Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[108.261792, 27.53811], [108.396134, 27.978603], [108.494626, 28.547063]]]}}
+]
+}

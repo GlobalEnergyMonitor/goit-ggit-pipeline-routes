@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7937", "OBJECTID": 566, "FeatureUID": "CbI_579", "InfSource1": "Cross-border Information (London) Ltd. and the African Energy Live Data platform (https://www.africa-energy.com/live-data), accessed 2020-07-31.", "FeatureTyp": "Pipeline", "DsgAttr01": "Refined Product", "DsgAttr02": "Port Harcourt Refining Company (PHRC)", "DsgAttr03": "Enugu", "DsgAttr04": 198, "Shape_Length": 1.786830408285231}, "geometry": {"type": "MultiLineString", "coordinates": [[[7.106439, 4.764415], [7.371297, 5.117932], [7.543714, 6.451937]]]}}
+]
+}

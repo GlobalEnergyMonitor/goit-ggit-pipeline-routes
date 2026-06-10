@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6872", "id": null}, "geometry": {"type": "MultiLineString", "coordinates": [[[15.340249, 41.746705], [15.30961, 41.761401], [15.271838, 41.775126], [15.243752, 41.776571], [15.211791, 41.772959], [15.201137, 41.775126], [15.178862, 41.771515], [15.152712, 41.778015]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P6872", "id": null}, "geometry": {"type": "MultiLineString", "coordinates": [[[15.30961, 41.761401], [15.364815, 41.780182], [15.419052, 41.782348]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P6872", "id": null}, "geometry": {"type": "MultiLineString", "coordinates": [[[15.436975, 41.527502], [15.518691, 41.530205], [15.57157, 41.544951]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P6872", "id": null}, "geometry": {"type": "MultiLineString", "coordinates": [[[15.423152, 41.619079], [15.482283, 41.660059]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P6872", "id": null}, "geometry": {"type": "MultiLineString", "coordinates": [[[15.340249, 41.746705], [15.341217, 41.718529], [15.366711, 41.681905], [15.412336, 41.627351], [15.441862, 41.604768], [15.436975, 41.527502], [15.386847, 41.517126], [15.317763, 41.512146], [15.264663, 41.492937]]]}}
+]
+}

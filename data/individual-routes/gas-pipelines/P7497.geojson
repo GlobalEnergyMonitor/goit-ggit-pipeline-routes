@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7497", "id": 1, "Name": "Brigalow Gas Pipeline"}, "geometry": {"type": "LineString", "coordinates": [[150.781309, -26.93443], [150.715017, -27.054221]]}}
+]
+}

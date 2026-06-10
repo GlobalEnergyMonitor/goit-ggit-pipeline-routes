@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4969", "id": 4969, "Type": "Gas pipeline", "Name": "Xishui-Bijie Gas Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[106.134687, 28.161985], [105.253245, 27.301409]]]}}
+]
+}

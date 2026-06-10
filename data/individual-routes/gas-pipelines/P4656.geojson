@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4656", "id": 4656, "Type": "Gas pipeline", "Name": "Wuhan Petro Chemical Plant branch"}, "geometry": {"type": "MultiLineString", "coordinates": [[[114.257217, 30.302564], [114.42635, 30.646502]]]}}
+]
+}

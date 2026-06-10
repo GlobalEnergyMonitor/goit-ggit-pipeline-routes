@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7515", "name": "镇远至羊满哨天然气管道", "status": "已投产", "operator": "贵州东黎能源投资股份有限公司", "length": "187.25公里", "pressure": "6.3MPa", "diameter": "DN300", "construction_year": "2019-2022"}, "geometry": {"type": "LineString", "coordinates": [[108.366868, 27.005798], [108.439463, 26.954103]]}}
+]
+}

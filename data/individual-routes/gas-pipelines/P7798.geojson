@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7798", "PrjName": "Sabine Crossing Pipeline", "OGW_ID": "rec_co5ce3m3ktn6vflsee8g", "Res": "High", "DataSrce": "FERC", "SrceDate": 2024, "SrceLink": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240229-5307&optimized=false", "DigName": "LM", "Method": "Georeferenced", "DigDate": "2024-08-27", "Notes": null, "Shape_Leng": 9173.38929628, "Additional": 2700.0, "AffectedSt": "LA", "Miles": 5.0, "PipelineDi": "48", "ProductTyp": "Natural Gas", "ProductUni": "MMscf/d", "ProjectTyp": "New Pipeline", "Mile_check": 5}, "geometry": {"type": "MultiLineString", "coordinates": [[[-93.933212, 29.756919], [-93.928289, 29.750987], [-93.926179, 29.748371], [-93.91995, 29.745579], [-93.908596, 29.748894], [-93.907692, 29.747237], [-93.901061, 29.74933], [-93.898348, 29.748632], [-93.884081, 29.757181], [-93.880163, 29.761193], [-93.878856, 29.762065], [-93.872868, 29.762187], [-93.87188, 29.76208], [-93.868547, 29.760794], [-93.866448, 29.760829], [-93.865295, 29.759936]]]}}
+]
+}

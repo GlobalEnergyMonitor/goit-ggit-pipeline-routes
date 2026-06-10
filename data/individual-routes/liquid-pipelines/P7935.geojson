@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7935", "OBJECTID": 455, "FeatureUID": "CbI_468", "InfSource1": "Cross-border Information (London) Ltd. and the African Energy Live Data platform (https://www.africa-energy.com/live-data), accessed 2020-07-31.", "FeatureTyp": "Pipeline", "DsgAttr01": "Oil", "DsgAttr02": "Ughelli", "DsgAttr03": "Forcados Terminal", "DsgAttr04": 79, "Shape_Length": 0.7158987683144437}, "geometry": {"type": "MultiLineString", "coordinates": [[[5.934231, 5.511782], [5.716701, 5.565934], [5.667763, 5.414771], [5.519216, 5.350041], [5.348531, 5.343661]]]}}
+]
+}

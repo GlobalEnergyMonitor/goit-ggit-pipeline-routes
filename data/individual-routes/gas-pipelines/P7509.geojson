@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7509", "name": "天然气管道线路", "description": "台盘至剑河段"}, "geometry": {"type": "LineString", "coordinates": [[108.154966, 26.697309], [108.367066, 26.69679]]}}
+]
+}

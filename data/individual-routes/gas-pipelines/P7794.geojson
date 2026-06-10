@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7794", "id": 1, "Name": "Borealis Project"}, "geometry": {"type": "LineString", "coordinates": [[-84.22612, 39.486932], [-82.933947, 39.753915], [-80.87139, 39.763329]]}}
+]
+}

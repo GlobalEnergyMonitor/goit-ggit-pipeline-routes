@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P5910", "id": 5910, "Type": "Gas pipeline", "Name": "Tongluoxia Gas Storage Branch"}, "geometry": {"type": "MultiLineString", "coordinates": [[[106.853363, 29.890587], [106.835319, 29.841703], [106.838179, 29.82189], [106.815795, 29.794962], [106.821621, 29.774838], [106.812251, 29.753866], [106.791423, 29.73653], [106.780923, 29.708357], [106.782267, 29.678947], [106.781886, 29.676547]]]}}
+]
+}

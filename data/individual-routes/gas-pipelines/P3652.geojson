@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P3652", "id": 1, "Name": "Mount Morgans Gas Pipeline"}, "geometry": {"type": "LineString", "coordinates": [[122.223644, -28.813406], [122.209055, -28.798954], [122.1951, -28.788948], [122.185546, -28.782914]]}}
+]
+}

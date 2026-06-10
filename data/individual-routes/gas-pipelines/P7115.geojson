@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7115", "name": "Point 1", "marker-color": "#FF0000", "marker-size": "medium", "marker-symbol": "circle"}, "geometry": {"type": "Point", "coordinates": [81.958357, 41.480916]}},
+{"type": "Feature", "properties": {"ProjectID": "P7115", "name": "Point 2", "marker-color": "#00FF00", "marker-size": "medium", "marker-symbol": "circle"}, "geometry": {"type": "Point", "coordinates": [81.24541, 40.597072]}},
+{"type": "Feature", "properties": {"ProjectID": "P7115", "name": "Point 3", "marker-color": "#0000FF", "marker-size": "medium", "marker-symbol": "circle"}, "geometry": {"type": "Point", "coordinates": [80.239544, 41.195424]}},
+{"type": "Feature", "properties": {"ProjectID": "P7115", "name": "Point 4", "marker-color": "#FFFF00", "marker-size": "medium", "marker-symbol": "circle"}, "geometry": {"type": "Point", "coordinates": [78.994862, 40.537942]}},
+{"type": "Feature", "properties": {"ProjectID": "P7115", "name": "Point 5", "marker-color": "#FF00FF", "marker-size": "medium", "marker-symbol": "circle"}, "geometry": {"type": "Point", "coordinates": [78.447004, 39.940403]}},
+{"type": "Feature", "properties": {"ProjectID": "P7115", "name": "Route", "stroke": "#FF0000", "stroke-width": 3, "stroke-opacity": 0.8, "fill": "#FF0000", "fill-opacity": 0.2}, "geometry": {"type": "LineString", "coordinates": [[81.958357, 41.480916], [81.24541, 40.597072], [80.239544, 41.195424], [78.994862, 40.537942], [78.447004, 39.940403]]}}
+]
+}

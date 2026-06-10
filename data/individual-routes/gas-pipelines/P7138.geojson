@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7138", "id": 2, "Name": "BallymahonSec1", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-7.790528, 53.539857], [-7.762271, 53.560801], [-7.706917, 53.547773], [-7.702206, 53.548836]]]}}
+]
+}

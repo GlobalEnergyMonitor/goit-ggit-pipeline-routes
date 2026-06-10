@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4993", "name": "天然气输送管道", "operator": "贵州天然气管网有限责任公司", "status": "运营中", "pressure": "6.3MPa", "diameter": "DN400", "length": "约65公里"}, "geometry": {"type": "LineString", "coordinates": [[108.55355, 26.047967], [108.354359, 26.084983], [108.210047, 26.160349], [108.027257, 26.191349], [108.06553, 26.377831]]}}
+]
+}

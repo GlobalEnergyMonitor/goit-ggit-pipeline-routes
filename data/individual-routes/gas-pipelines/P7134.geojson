@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7134", "id": 1, "Name": "NewTowns", "Type": "lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-8.810901, 53.290861], [-8.983472, 53.287113]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7134", "id": 2, "Name": "NewTowns", "Type": "lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-9.007729, 53.498438], [-8.887599, 53.514546]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7134", "id": 3, "Name": "NewTowns", "Type": "lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-9.007729, 53.498438], [-9.093226, 53.468404]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7134", "id": 4, "Name": "NewTowns", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-9.075508, 53.678998], [-9.205224, 53.627771]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7134", "id": 5, "Name": "NewTowns", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-9.075508, 53.678998], [-8.994542, 53.712237]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7134", "id": 6, "Name": "NewTowns", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-9.224078, 53.878289], [-9.277904, 53.861032], [-9.494063, 53.803465]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P7134", "id": 7, "Name": "NewTowns", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-9.412513, 54.076028], [-9.316669, 54.092179], [-9.168507, 54.108532]]]}}
+]
+}

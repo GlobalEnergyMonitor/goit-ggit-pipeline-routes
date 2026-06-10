@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7130", "id": 1, "Name": "BirchGrove", "Type": "Expansion"}, "geometry": {"type": "LineString", "coordinates": [[-121.207001, 55.922501], [-121.015999, 55.927399], [-120.971001, 55.948299], [-120.726174, 56.061762]]}}
+]
+}

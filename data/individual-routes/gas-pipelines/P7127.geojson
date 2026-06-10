@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7127", "id": 1, "Name": "NenaghExtension", "Types": "lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-8.624026, 52.644684], [-8.507539, 52.694824], [-8.452806, 52.745078], [-8.222172, 52.855757]]]}}
+]
+}

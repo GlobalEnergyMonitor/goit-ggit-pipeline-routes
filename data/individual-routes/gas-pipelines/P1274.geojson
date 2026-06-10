@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P1274", "OBJECTID": 1196, "nombre_gasoducto": "REYNOSA - SAN FERNANDO", "longitud_km": 0, "pais": "MÉXICO", "diametro": null, "operador": "", "anio_operacion": 2003, "tramo": "REYNOSA - SAN FERNANDO", "Shape__Length": 1.0807105135593278}, "geometry": {"type": "LineString", "coordinates": [[-98.474429, 26.011869], [-98.468446, 26.000332], [-98.458189, 25.987746], [-98.446617, 25.977867], [-98.434224, 25.969782], [-98.421832, 25.961697], [-98.408392, 25.952752], [-98.393787, 25.943458], [-98.378811, 25.936033], [-98.35217, 25.923012], [-98.313541, 25.915044], [-98.27503, 25.915338], [-98.190604, 25.131756]]}}
+]
+}

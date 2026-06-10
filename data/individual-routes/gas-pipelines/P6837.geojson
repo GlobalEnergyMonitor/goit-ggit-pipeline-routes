@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6837", "id": 6837, "Type": "Gas pipeline", "Name": "Tongren Branch"}, "geometry": {"type": "MultiLineString", "coordinates": [[[102.018466, 35.536652], [101.813181, 35.805818], [101.813181, 35.805818], [102.018854, 35.53629]]]}}
+]
+}

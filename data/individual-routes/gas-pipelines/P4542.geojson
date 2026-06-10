@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4542", "name": "玛拉迪-上海庙输气管道"}, "geometry": {"type": "LineString", "coordinates": [[108.031842, 38.347659], [107.453181, 38.191635], [106.639021, 38.360323]]}}
+]
+}

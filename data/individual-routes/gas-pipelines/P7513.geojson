@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7513", "name": "凯里至雷山天然气管道", "status": "建设中", "operator": "贵州东黎能源投资股份有限公司", "pressure": "6.3MPa", "diameter": "DN300-DN400"}, "geometry": {"type": "LineString", "coordinates": [[108.052403, 26.547814], [108.083837, 26.378585]]}}
+]
+}

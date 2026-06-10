@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7482", "id": 1, "Name": "Taba-Aqaba"}, "geometry": {"type": "LineString", "coordinates": [[34.825091, 29.424227], [34.845743, 29.411947], [34.878723, 29.400058], [34.923077, 29.38982], [34.983352, 29.379249], [35.007993, 29.375946]]}}
+]
+}

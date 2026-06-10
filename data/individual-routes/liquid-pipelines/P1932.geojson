@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P1932", "NAME": "Punta de Palma-Puerto Miranda Oil Pipeline", "ID": "P1932", "LENGTH": 37.631, "name": "Punta de Palma-Puerto Miranda Oil Pipeline", "id": "P1932"}, "geometry": {"type": "LineString", "coordinates": [[-71.550956, 10.767098], [-71.551025, 10.76369], [-71.556378, 10.754752], [-71.589777, 10.726597], [-71.614008, 10.669781], [-71.639339, 10.520383], [-71.635117, 10.45065]]}}
+]
+}

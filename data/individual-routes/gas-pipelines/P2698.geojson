@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P2698", "name": "P2698", "styleUrl": "#line-000000-1200-nodesc", "stroke-opacity": 1, "stroke": "#000000", "stroke-width": 1.2}, "geometry": {"type": "LineString", "coordinates": [[65.80576, 38.459081], [66.999978, 38.190923], [67.193469, 38.119615], [67.26339, 38.118052], [67.324921, 38.116813], [67.015258, 37.677438]]}}
+]
+}

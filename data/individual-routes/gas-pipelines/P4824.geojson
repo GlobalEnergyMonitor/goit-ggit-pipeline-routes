@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4824", "id": 4824, "Type": "Gas pipeline", "Name": "Yichuan-Mengjin gas pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[112.379421, 34.42516], [112.380172, 34.690683], [112.41134, 34.82364]]]}}
+]
+}

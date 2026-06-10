@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7599", "id": 1, "Name": "Sakarya Gas Pipeline Phase II"}, "geometry": {"type": "LineString", "coordinates": [[31.288619, 42.786817], [31.662084, 41.881969], [31.727981, 41.840443], [31.947213, 41.771486], [32.061344, 41.578511]]}}
+]
+}

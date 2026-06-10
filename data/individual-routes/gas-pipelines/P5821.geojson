@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P5821", "id": 1, "Name": "COMP1-NFPS Gas Pipeline 2-Onshore"}, "geometry": {"type": "LineString", "coordinates": [[51.558816, 25.92495], [51.524478, 25.888896]]}}
+]
+}

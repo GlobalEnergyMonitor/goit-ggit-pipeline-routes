@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4835", "id": 4835, "Type": "Gas pipeline", "Name": "Hangzhou-Jiaxing Gas Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[120.303914, 30.270535], [120.34184, 30.396903], [120.536366, 30.51084], [120.587355, 30.544246], [120.645377, 30.595235], [120.749113, 30.655015], [120.708674, 30.672598], [120.677025, 30.698971], [120.654168, 30.732378], [120.641861, 30.765785]]]}}
+]
+}

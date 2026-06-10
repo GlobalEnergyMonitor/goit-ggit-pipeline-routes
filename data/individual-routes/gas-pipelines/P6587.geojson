@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6587", "id": 6587, "Type": "Gas pipeline", "Name": "Tongluoxia-Waihuan valve chamber Gas Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[106.751328, 29.714115], [106.781886, 29.676547]]]}}
+]
+}

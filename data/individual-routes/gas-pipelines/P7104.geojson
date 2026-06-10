@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7104", "Fuel": null, "StartCountry": null, "EndCountry": null, "Countries": null, "Wiki": null, "PipelineName": null, "SegmentName": null, "OtherEnglishNames": null, "Status": null, "Owner": null, "Parent": null, "ParentHQCountry": null, "StartYear1": null, "StartYear2": null, "StartYear3": null, "StopYear": null, "ShelvedYear": null, "Capacity": null, "CancelledYear": null, "CapacityUnits": null, "CapacityBcm/y": null, "CapacityBOEd": null, "LengthKnownKm": null, "LengthEstimateKm": null, "LengthMergedKm": null, "Diameter": null, "DiameterUnits": null, "FuelSource": null, "StartLocation": null, "StartPrefecture/District": null, "StartState/Province": null, "StartRegion": null, "EndLocation": null, "StartSubRegion": null, "EndPrefecture/District": null, "EndState/Province": null, "EndRegion": null, "FIDStatus": null, "EndSubRegion": null, "FIDYear": null, "OtherLanguagePrimaryPipelineName": null, "OtherLanguageSegmentName": null, "Cost": null, "CostUnits": null, "CostUSD": null, "WKTFormat": null, "LastUpdated": null}, "geometry": {"type": "LineString", "coordinates": [[49.603781, 37.273875], [51.448984, 40.358116], [48.805612, 44.838724], [52.442591, 46.319762], [53.316221, 47.672514]]}}
+]
+}

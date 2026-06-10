@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4922", "id": 4922, "Type": "Gas pipeline", "Name": "Tianjin Lingang-Qijiawu Connecting Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[117.191976, 38.545502], [117.695509, 38.997741]]]}}
+]
+}

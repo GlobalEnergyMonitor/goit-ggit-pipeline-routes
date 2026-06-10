@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7126", "id": 1, "Type": "lateral", "Name": "WexfordSpur"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-6.990158, 52.297354], [-6.654972, 52.326752], [-6.516932, 52.336193]]]}}
+]
+}

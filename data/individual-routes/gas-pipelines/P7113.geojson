@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P7113", "id": 1, "Name": "Edenderry Transmission Connection", "Type": "Expansion"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-7.086297, 53.289489], [-7.340993, 53.455134]]]}}
+]
+}

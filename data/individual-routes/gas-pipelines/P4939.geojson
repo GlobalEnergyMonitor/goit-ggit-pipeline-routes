@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P4939", "id": 4939, "Type": "Gas pipeline", "Name": "Huai'an Gas Storage- Liuzhuang Gas Storage Branch"}, "geometry": {"type": "MultiLineString", "coordinates": [[[119.312275, 33.492895], [119.00304, 33.162795]]]}}
+]
+}

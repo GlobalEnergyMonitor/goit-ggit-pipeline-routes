@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P2829", "id": 1, "Name": "WaterfordSpur", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-7.715547, 52.377497], [-7.371338, 52.330932], [-7.169721, 52.250736], [-7.074275, 52.246678], [-7.093358, 52.172567]]]}},
+{"type": "Feature", "properties": {"ProjectID": "P2829", "id": 2, "Name": "WaterfordSpur", "Type": "Lateral"}, "geometry": {"type": "MultiLineString", "coordinates": [[[-7.074275, 52.246678], [-6.978027, 52.20955]]]}}
+]
+}

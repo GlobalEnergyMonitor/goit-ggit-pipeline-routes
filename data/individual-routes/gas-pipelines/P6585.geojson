@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P6585", "id": 6585, "Type": "Gas pipeline", "Name": "Fuling-Changjiang West Valve Chamber Gas Pipeline"}, "geometry": {"type": "MultiLineString", "coordinates": [[[107.103653, 29.686653], [107.142428, 29.70697]]]}}
+]
+}

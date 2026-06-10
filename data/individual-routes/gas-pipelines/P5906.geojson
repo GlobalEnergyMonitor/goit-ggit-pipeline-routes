@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P5906", "id": 5906, "Type": "Gas pipeline", "Name": " 江苏配套管线工程金武管道工程（高塍-雪堰段）"}, "geometry": {"type": "MultiLineString", "coordinates": [[[119.805761, 31.456645], [120.041893, 31.544284], [120.041851, 31.544284]]]}}
+]
+}
