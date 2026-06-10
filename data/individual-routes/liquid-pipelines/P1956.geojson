@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P1956"}, "geometry": {"type": "LineString", "coordinates": [[46.813873, 23.529668], [47.50795, 25.171512]]}}
+{"type": "Feature", "properties": {"ProjectID": "P1956", "region": "Middle East", "country": "Saudi Arabia", "fuel_type": "Oil", "status": "Operating", "pipe_type": "National", "operator": "Aramco", "project_na": "Hawtah - Hawtah Stabilizer", "start": "Hawtah field, Saudi Arabia", "End_": "Hawtah Stabilizer, Petroline, Saudi Arabia", "Shareholde": "Aramco", "length": 206, "diameter": 24, "capacity": "Not specified", "Scope": "Saudi Aramco operated pipeline from Hawtah field to Hawtah Stabilizer", "linked": " ", "eng_co": " ", "con_co": " ", "contact": "Mohammad Manzouri", "position": "Pipeline Projects Department Head", "co_name": "Aramco", "phone_no": "+966 (13) 872 0115", "email": "Mohammad.Manzouri@aramco.com", "website": "https://www.aramco.com/", "start_date": " ", "Shape_STLe": 696, "Shape_ST_1": 0, "Shape_ST_2": 3.09267103, "Capacity_Mbpd": 425, "OBJECTID_1": 404, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1755266419000}, "geometry": {"type": "LineString", "coordinates": [[47.51311, 25.17941], [47.902822, 24.784888], [47.956728, 24.785776], [47.966043, 24.663371], [48.01919, 24.597719], [48.121003, 24.466554], [48.118308, 24.175317], [48.09919, 23.876104], [47.115925, 23.05398], [46.844329, 22.984131]]}}
 ]
 }

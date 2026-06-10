@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P1960"}, "geometry": {"type": "LineString", "coordinates": [[38.191737, 24.022783], [39.019229, 22.746126]]}}
+{"type": "Feature", "properties": {"ProjectID": "P1960", "region": "Middle East", "country": "Saudi Arabia", "fuel_type": "Oil", "status": "Operating", "pipe_type": "National", "operator": "Aramco", "project_na": "Petroline - Rabigh", "start": "Petroline, Saudi Arabia", "End_": "Rabigh refinery, Saudi Arabia", "Shareholde": "Aramco", "length": 90, "diameter": 36, "capacity": "Not specified", "Scope": "Saudi Aramco operated pipeline from Petroline to Rabigh refinery", "linked": " ", "eng_co": " ", "con_co": " ", "contact": "Mohammad Manzouri", "position": "Pipeline Projects Department Head", "co_name": "Aramco", "phone_no": "+966 (13) 872 0115", "email": "Mohammad.Manzouri@aramco.com", "website": "https://www.aramco.com/", "start_date": "1982", "Shape_STLe": 1381, "Shape_ST_1": 0, "Shape_ST_2": 11.42120084, "Capacity_Mbpd": 957, "OBJECTID_1": 4103, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1755266419000}, "geometry": {"type": "LineString", "coordinates": [[39.116054, 23.898749], [39.139081, 23.845993], [39.144464, 23.806157], [39.117548, 23.774935], [39.03034, 23.730254], [39.008807, 23.668885], [38.940978, 23.602133], [38.912986, 23.510618], [38.892566, 23.408188], [38.897913, 23.210234], [38.920813, 23.117171], [39.101383, 22.745778], [39.027963, 22.712866]]}}
 ]
 }

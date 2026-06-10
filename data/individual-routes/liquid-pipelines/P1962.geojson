@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P1962"}, "geometry": {"type": "LineString", "coordinates": [[48.043278, 25.087111], [46.674188, 24.709961]]}}
+{"type": "Feature", "properties": {"ProjectID": "P1962", "region": "Middle East", "country": "Saudi Arabia", "fuel_type": "Oil", "status": "Operating", "pipe_type": "National", "operator": "Aramco", "project_na": "Khurais - Riyadh", "start": "Khurais field, Saudi Arabia", "End_": "Riyadh refinery, Saudi Arabia", "Shareholde": "Aramco", "length": 88, "diameter": 26, "capacity": "Not specified", "Scope": "Saudi Aramco operated pipeline from Khurais field to Riyadh refinery", "linked": " ", "eng_co": " ", "con_co": " ", "contact": "Mohammad Manzouri", "position": "Pipeline Projects Department Head", "co_name": "Aramco", "phone_no": "+966 (13) 872 0115", "email": "Mohammad.Manzouri@aramco.com", "website": "https://www.aramco.com/", "start_date": " ", "Shape_STLe": 852, "Shape_ST_1": 0, "Shape_ST_2": 1.46727823, "Capacity_Mbpd": 499, "OBJECTID_1": 402, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1755266419000}, "geometry": {"type": "LineString", "coordinates": [[48.041269, 25.073745], [47.987862, 25.024175], [47.40245, 24.767194], [47.38307, 24.741354], [47.362614, 24.717668], [47.309858, 24.698288], [47.192504, 24.658452], [47.02024, 24.58847], [46.909346, 24.546481], [46.88889, 24.518488], [46.868433, 24.522795]]}}
 ]
 }
