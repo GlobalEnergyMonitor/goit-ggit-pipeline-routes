@@ -1,7 +1,87 @@
 {
-"type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "ProjectID": "P1962" }, "geometry": { "type": "LineString", "coordinates": [ [ 48.043278, 25.087111 ], [ 46.674188, 24.709961 ] ] } }
-]
+  "type": "Feature",
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        48.04126883791986,
+        25.073745331385048
+      ],
+      [
+        47.98786226592034,
+        25.02417458949577
+      ],
+      [
+        47.402449718345736,
+        24.767193587088787
+      ],
+      [
+        47.38307009232852,
+        24.741354085278008
+      ],
+      [
+        47.36261382017193,
+        24.71766787627966
+      ],
+      [
+        47.30985817102055,
+        24.698288249929057
+      ],
+      [
+        47.192503768777904,
+        24.65845235175056
+      ],
+      [
+        47.020240425105115,
+        24.588470368376374
+      ],
+      [
+        46.9093458979021,
+        24.546481178879183
+      ],
+      [
+        46.88888962574555,
+        24.518488385626277
+      ],
+      [
+        46.86843335448725,
+        24.522794969134303
+      ]
+    ]
+  },
+  "properties": {
+    "region": "Middle East",
+    "country": "Saudi Arabia",
+    "fuel_type": "Oil",
+    "status": "Operating",
+    "pipe_type": "National",
+    "operator": "Aramco",
+    "project_na": "Khurais - Riyadh",
+    "start": "Khurais field, Saudi Arabia",
+    "End_": "Riyadh refinery, Saudi Arabia",
+    "Shareholde": "Aramco",
+    "length": 88,
+    "diameter": 26,
+    "capacity": "Not specified",
+    "Scope": "Saudi Aramco operated pipeline from Khurais field to Riyadh refinery",
+    "linked": " ",
+    "eng_co": " ",
+    "con_co": " ",
+    "contact": "Mohammad Manzouri",
+    "position": "Pipeline Projects Department Head",
+    "co_name": "Aramco",
+    "phone_no": "+966 (13) 872 0115",
+    "email": "Mohammad.Manzouri@aramco.com",
+    "website": "https://www.aramco.com/",
+    "start_date": " ",
+    "Shape_STLe": 852,
+    "Shape_ST_1": 0,
+    "Shape_ST_2": 1.46727823,
+    "Capacity_Mbpd": 499,
+    "OBJECTID_1": 402,
+    "created_user": null,
+    "created_date": null,
+    "last_edited_user": "SDE",
+    "last_edited_date": 1755266419000
+  }
 }

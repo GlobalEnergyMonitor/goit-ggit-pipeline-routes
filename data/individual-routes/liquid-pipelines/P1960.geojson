@@ -1,7 +1,95 @@
 {
-"type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "ProjectID": "P1960" }, "geometry": { "type": "LineString", "coordinates": [ [ 38.191737, 24.022783 ], [ 39.019229, 22.746126 ] ] } }
-]
+  "type": "Feature",
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        39.116054488484146,
+        23.89874919574503
+      ],
+      [
+        39.139081221554285,
+        23.845993333725566
+      ],
+      [
+        39.14446445135287,
+        23.80615743558344
+      ],
+      [
+        39.117548303258346,
+        23.77493470410924
+      ],
+      [
+        39.030339985731736,
+        23.730253900106792
+      ],
+      [
+        39.00880706833406,
+        23.668885083964298
+      ],
+      [
+        38.940978376824695,
+        23.602133038604524
+      ],
+      [
+        38.912985583489096,
+        23.51061813734662
+      ],
+      [
+        38.89256612878441,
+        23.40818841129183
+      ],
+      [
+        38.89791254113108,
+        23.210233932782312
+      ],
+      [
+        38.92081319205781,
+        23.117171270493017
+      ],
+      [
+        39.10138266427475,
+        22.745777934278806
+      ],
+      [
+        39.02796339742616,
+        22.71286584914924
+      ]
+    ]
+  },
+  "properties": {
+    "region": "Middle East",
+    "country": "Saudi Arabia",
+    "fuel_type": "Oil",
+    "status": "Operating",
+    "pipe_type": "National",
+    "operator": "Aramco",
+    "project_na": "Petroline - Rabigh",
+    "start": "Petroline, Saudi Arabia",
+    "End_": "Rabigh refinery, Saudi Arabia",
+    "Shareholde": "Aramco",
+    "length": 90,
+    "diameter": 36,
+    "capacity": "Not specified",
+    "Scope": "Saudi Aramco operated pipeline from Petroline to Rabigh refinery",
+    "linked": " ",
+    "eng_co": " ",
+    "con_co": " ",
+    "contact": "Mohammad Manzouri",
+    "position": "Pipeline Projects Department Head",
+    "co_name": "Aramco",
+    "phone_no": "+966 (13) 872 0115",
+    "email": "Mohammad.Manzouri@aramco.com",
+    "website": "https://www.aramco.com/",
+    "start_date": "1982",
+    "Shape_STLe": 1381,
+    "Shape_ST_1": 0,
+    "Shape_ST_2": 11.42120084,
+    "Capacity_Mbpd": 957,
+    "OBJECTID_1": 4103,
+    "created_user": null,
+    "created_date": null,
+    "last_edited_user": "SDE",
+    "last_edited_date": 1755266419000
+  }
 }
