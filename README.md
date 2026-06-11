@@ -12,6 +12,9 @@ Compared to the original files on `main`, every file here:
 - carries a `ProjectID` property on every feature, matching the filename
   (where the original file carried a different `ProjectID`, that value is
   preserved as `SourceProjectID`)
+- if it is a route file (not a `-compressor-stations` file), contains only
+  line geometries -- embedded point features (valves, pig launchers,
+  markers) and traced station polygons are dropped
 
 If you want the original files exactly as researchers submitted them --
 original metadata, original coordinate precision -- use the `main` branch.

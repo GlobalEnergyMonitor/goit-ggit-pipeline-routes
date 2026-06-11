@@ -1,9 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P7116", "name": "Point 1", "marker-color": "#FF5733", "marker-size": "medium", "marker-symbol": "circle"}, "geometry": {"type": "Point", "coordinates": [84.211025, 41.465181]}},
-{"type": "Feature", "properties": {"ProjectID": "P7116", "name": "Point 2", "marker-color": "#33FF57", "marker-size": "medium", "marker-symbol": "circle"}, "geometry": {"type": "Point", "coordinates": [85.17161, 41.772838]}},
-{"type": "Feature", "properties": {"ProjectID": "P7116", "name": "Point 3", "marker-color": "#3357FF", "marker-size": "medium", "marker-symbol": "circle"}, "geometry": {"type": "Point", "coordinates": [85.369151, 41.922904]}},
 {"type": "Feature", "properties": {"ProjectID": "P7116", "name": "Route", "stroke": "#FF0000", "stroke-width": 3, "stroke-opacity": 0.8, "fill": "#FF0000", "fill-opacity": 0.2}, "geometry": {"type": "LineString", "coordinates": [[84.211025, 41.465181], [85.17161, 41.772838], [85.369151, 41.922904]]}}
 ]
 }
