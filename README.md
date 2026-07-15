@@ -56,6 +56,38 @@ python3 scripts/validate_geojson.py path/to/P1234.geojson    # specific files
 python3 scripts/validate_geojson.py --all                    # the whole repo
 ```
 
+## Pre-commit QC of uploaded routes (`scripts/qc_routes.py`)
+
+Before routes from an update cycle enter the repo, `scripts/qc_routes.py` runs a richer QC pass than the CI validator, comparing each route against the authoritative pipeline database (the tracker Google Sheet). It's a maintainer tool for triaging the geojson files researchers drop in the shared Drive folder, run in two phases.
+
+**1. Report (read-only) — scan a folder and see what's good:**
+
+```
+python3 scripts/qc_routes.py "/path/to/PIPELINE ROUTES .../Isabel"   # a researcher's folder
+python3 scripts/qc_routes.py path/to/P1234.geojson                   # specific files
+```
+
+Each route is graded **PASS** / **WARN** / **FAIL**. On top of the CI checks (valid GeoJSON, WGS 84, no Z, coord ranges, filename) it verifies, against the DB:
+
+* the ProjectID exists in the gas/oil tracker (and which fuel it is);
+* both **endpoints fall in the DB Start/End country** (either orientation) — a country mismatch is a FAIL;
+* **country coverage** — vertices straying outside the DB `CountriesOrAreas` (WARN);
+* **route length** vs the DB length field (WARN beyond ±30%);
+* **crude geometry** — long straight segments, reported as a quiet "fix eventually" note for `low`/`medium`/`no route` accuracy but a WARN when the DB says `high`;
+* **possible duplicate** — geometry identical to another project's route (INFO when they're plausibly parallel routes, WARN otherwise);
+* a soft **geocoding hint** — distance from the geocoded DB `StartLocation`/`EndLocation` place name to the matching endpoint (`--no-geocode` to skip).
+
+**2. Copy (stages files into the repo) — only after you've read the report:**
+
+```
+python3 scripts/qc_routes.py "/path/.../Isabel" --copy                       # copies PASS routes
+python3 scripts/qc_routes.py "/path/.../Isabel" --copy --include P1897 P3961  # also copy these WARN routes
+```
+
+The copy phase places routes in `data/individual-routes/<fuel>/` (fuel from the DB tab). **PASS** routes are copied automatically; **WARN** routes only when named with `--include`; **FAIL** routes are always left behind. Nothing is committed — review, then create a branch and PR as usual.
+
+Reference data (DB tabs, Natural Earth country boundaries, geocode cache) is cached under `~/.cache/gem-route-qc/` and never touches the repo; pass `--refresh` to re-download.
+
 ## The `normalized` branch (generated — do not edit)
 
 The `main` branch always holds the **original** files exactly as submitted — original metadata, original coordinate precision — so researchers who scrape routes get untouched data.
