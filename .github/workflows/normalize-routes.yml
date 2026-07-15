@@ -39,6 +39,7 @@ jobs:
         run: python3 scripts/normalize_geojson.py --out "$RUNNER_TEMP/normalized"
 
       - name: commit and push to normalized branch
+        id: push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -59,7 +60,28 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "normalized routes unchanged -- nothing to push"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "normalize routes from ${GITHUB_SHA::7}"
             git push origin HEAD:refs/heads/normalized
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # Kick off the map-data build in goit-ggit-data-ops (which reads this
+      # repo's normalized branch). Needs DATA_OPS_DISPATCH_TOKEN: a
+      # fine-grained PAT for goit-ggit-data-ops with Contents read/write
+      # (repository_dispatch can't be sent cross-repo with GITHUB_TOKEN).
+      # Skips quietly if the secret isn't configured.
+      - name: dispatch map build in data-ops
+        if: steps.push.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.DATA_OPS_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "DATA_OPS_DISPATCH_TOKEN not set -- skipping dispatch"
+            exit 0
+          fi
+          gh api repos/GlobalEnergyMonitor/goit-ggit-data-ops/dispatches \
+            -f event_type=routes-normalized \
+            -f "client_payload[routes_sha]=${GITHUB_SHA}"
+          echo "dispatched routes-normalized to goit-ggit-data-ops"
