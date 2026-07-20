@@ -247,11 +247,14 @@ class Countries:
         for feat in ne["features"]:
             props = feat["properties"]
             geom = shape(feat["geometry"])
-            i = len(self.geoms)
             self.geoms.append(geom)
             self.names.append(props.get("NAME") or props.get("ADMIN") or "?")
-            for f in NE_NAME_FIELDS:
-                v = props.get(f)
+        # field-major so a strong field (NAME) of any feature beats a weak
+        # one (SOVEREIGNT) of an earlier feature — else e.g. "Netherlands"
+        # resolves to Sint Maarten (whose SOVEREIGNT is "Netherlands")
+        for f in NE_NAME_FIELDS:
+            for i, feat in enumerate(ne["features"]):
+                v = feat["properties"].get(f)
                 if v:
                     self.name2id.setdefault(norm(v), i)
         self.tree = STRtree(self.geoms)
