@@ -4,8 +4,10 @@
 # FeatureCollections: 6-decimal coordinates, no legacy crs member, and a
 # ProjectID property on every feature (see scripts/normalize_geojson.py).
 #
-# Validation runs first; if any route file on main is invalid, the
-# normalized branch is not updated until main is fixed.
+# Validation runs first; if any route file on main is invalid, or a route's
+# geometry sits entirely outside its DB countries (scripts/
+# check_route_countries.py, catches batch-export mixups), the normalized
+# branch is not updated until main is fixed.
 
 name: normalize routes
 
@@ -16,6 +18,7 @@ on:
       - 'data/individual-routes/**'
       - 'scripts/normalize_geojson.py'
       - 'scripts/validate_geojson.py'
+      - 'scripts/check_route_countries.py'
       - '.github/workflows/normalize-routes.yml'
   workflow_dispatch:
 
@@ -34,6 +37,9 @@ jobs:
 
       - name: validate all route files
         run: python3 scripts/validate_geojson.py --all
+
+      - name: check routes against DB countries
+        run: python3 scripts/check_route_countries.py
 
       - name: build normalized tree
         run: python3 scripts/normalize_geojson.py --out "$RUNNER_TEMP/normalized"
