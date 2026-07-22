@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # One-way mirror of the shared Drive upload folder
-# ("PIPELINE ROUTES - geojson files for Q1 2026 oil/NGL update")
+# ("PIPELINE ROUTES - geojson files for pipeline update cycles")
 # into drive-uploads/, using rclone instead of Google Drive for Desktop.
 #
 # One-time setup (opens a browser to log in with the GEM Google account).
