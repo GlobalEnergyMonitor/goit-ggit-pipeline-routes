@@ -1,6 +1,9 @@
 # ignore any folders TITLED ignore
 ignore/
 
+# local rclone mirror of the shared Drive upload folder (see scripts/sync_drive_uploads.sh)
+drive-uploads/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

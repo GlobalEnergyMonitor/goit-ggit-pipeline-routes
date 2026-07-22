@@ -11,6 +11,7 @@ data/individual-routes/
 ├── gas-pipelines/        # one P####.geojson per gas pipeline project
 ├── liquid-pipelines/     # oil / NGL / products pipelines
 └── hydrogen-pipelines/
+drive-uploads/            # git-ignored local mirror of the shared Drive upload folder (see QC section)
 scripts/                  # validation and QC tools (documented below)
 ```
 
@@ -69,6 +70,8 @@ python3 scripts/validate_geojson.py --all                    # the whole repo
 ## Pre-commit QC of uploaded routes (`scripts/qc_routes.py`)
 
 Before routes from an update cycle enter the repo, `scripts/qc_routes.py` runs a richer QC pass than the CI validator, comparing each route against the authoritative pipeline database (the tracker Google Sheet). It's a maintainer tool for triaging the geojson files researchers drop in the shared Drive folder, run in two phases.
+
+A local, git-ignored mirror of that Drive folder lives at `drive-uploads/`. `scripts/sync_drive_uploads.sh` refreshes it with a one-way `rclone` sync (no Google Drive for Desktop needed); one-time rclone setup instructions are in the script's header. It's a true mirror — files trashed on Drive after QC disappear locally on the next sync — so QC can point straight at `drive-uploads/<researcher folder>`. After merging a route into the repo, trash the Drive original with `rclone deletefile gem-pipeline-uploads:<researcher>/P####.geojson` (goes to Drive's trash, recoverable for 30 days).
 
 **1. Report (read-only) — scan a folder and see what's good:**
 
