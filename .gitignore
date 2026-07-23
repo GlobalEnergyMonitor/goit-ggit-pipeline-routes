@@ -192,3 +192,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# codegraph local index
+.codegraph/
