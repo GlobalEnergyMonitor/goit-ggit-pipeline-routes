@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P1865"}, "geometry": {"type": "LineString", "coordinates": [[13.424952, 32.766323], [13.163216, 32.757278], [12.93375, 32.745216], [12.849493, 32.748232], [12.763443, 32.772353], [12.357394, 32.808522], [12.205014, 32.8763]]}}
+{"type": "Feature", "properties": {"ProjectID": "P1865", "country": "Libya", "fuel_type": "Natural Gas", "status": "Operating", "region": "Africa", "pipe_type": "National", "operator": "Sirte Oil Company", "Project": "Tripoli -Mellitah", "Shareholde": "Sirte Oil Company", "Length": 60.0, "Diameter": 34.0, "About": " ", "Links": " ", "Engineer": " ", "Construct": " ", "Contact": "Safdar Toor", "Poistion": "Senior Process Engineer", "Co_name": "Sirte Oil Company", "Tel": "+218 21 3610376", "Web": "https://www.sirteoil.com.ly/", "Start": "Tripoli, Libya", "End_": "Mellitah, Libya", "Descript": "Sirte Oil operated pipeline from Tripoli to Mellitah", "Comm_1": " ", "email": " ", "Cap": "Not specified", "Capacity_mmcfd": 1200.0, "Capex": null, "OBJECTID_1": 3770, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1722340923000}, "geometry": {"type": "LineString", "coordinates": [[12.23436, 32.853572], [12.294902, 32.81945], [12.367243, 32.805922], [12.509621, 32.774881], [12.592308, 32.757365], [12.734687, 32.75816], [12.876267, 32.777266], [13.016256, 32.804328], [13.126798, 32.826526], [13.164916, 32.83449], [13.256239, 32.830815], [13.306499, 32.855182]]}}
 ]
 }
