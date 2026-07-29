@@ -46,6 +46,7 @@ import hashlib
 import json
 import os
 import shutil
+import subprocess
 import sys
 import time
 import unicodedata
@@ -70,13 +71,19 @@ from validate_geojson import validate_file  # noqa: E402
 GEOD = Geod(ellps="WGS84")
 
 # --- pipeline DB (tracker Google Sheet) --------------------------------------
+# Anonymous CSV endpoints (gviz / export?format=csv) were deliberately disabled
+# org-wide on 2026-07-29: the sheet is readable only through the authenticated
+# Sheets API, here via the read-only `gws` work profile. Never reintroduce a
+# public-URL fallback.
 SHEET_ID = "1foPLE6K-uqFlaYgLPAUxzeXfDO5wOOqE7tibNHeqTek"
-DB_TABS = {  # fuel folder -> gviz gid
-    "gas-pipelines": "1020144097",
-    "liquid-pipelines": "456134080",
+DB_TABS = {  # fuel folder -> tab title
+    "gas-pipelines": "Gas pipelines",
+    "liquid-pipelines": "Oil/NGL pipelines",
 }
-GVIZ = ("https://docs.google.com/spreadsheets/d/{id}/gviz/tq"
-        "?tqx=out:csv&gid={gid}")
+GWS_ENV = {
+    "GOOGLE_WORKSPACE_CLI_CONFIG_DIR": str(Path.home() / ".config" / "gws-gem"),
+    "GOOGLE_WORKSPACE_CLI_KEYRING_BACKEND": "file",
+}
 
 NE_NAME = "ne_10m_admin_0_countries.geojson"
 NE_URL = ("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/"
@@ -165,6 +172,26 @@ def download(url, dest, note):
     return data
 
 
+def fetch_db_tab(title, dest):
+    """Download one tracker tab via the authenticated Sheets API (`gws` CLI,
+    read-only work profile) and cache it as a CSV grid matching the shape the
+    old gviz export produced (full grid from row 1, QUOTE_ALL)."""
+    print(f"  downloading DB tab {title!r} via gws ...", file=sys.stderr)
+    out = subprocess.run(
+        ["gws", "sheets", "spreadsheets", "values", "get", "--params",
+         json.dumps({"spreadsheetId": SHEET_ID, "range": f"'{title}'"})],
+        env={**os.environ, **GWS_ENV},
+        capture_output=True, text=True, check=True).stdout
+    # the CLI prints a non-JSON preamble line ("Using keyring backend: file")
+    values = json.loads(out[out.index("{"):])["values"]
+    width = max(len(r) for r in values)
+    rows = [r + [""] * (width - len(r)) for r in values]
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    with dest.open("w", newline="", encoding="utf-8") as fh:
+        csv.writer(fh, quoting=csv.QUOTE_ALL).writerows(rows)
+    return rows
+
+
 # --------------------------------------------------------------------------- #
 # pipeline database
 # --------------------------------------------------------------------------- #
@@ -172,15 +199,15 @@ HEADER_ROW = 2   # the real column-title row (3rd line); rows 0-1 are annotation
 
 
 def patch_header(hdr):
-    """Repair the one header the gviz CSV export loses.
+    """Repair the one header the old gviz CSV export lost.
 
     The length-value column is titled `LengthKnown` in the sheet, but it's a
-    merged header cell -- Google's gviz export writes merged text into a single
-    underlying cell and leaves this one blank, so `LengthKnown` never reaches
-    the CSV and the column arrives nameless. Restore the name (it always sits
-    immediately left of the `LengthKnownUnits` column) so the column is
-    addressable by name instead of by fragile position. Returns True if a fix
-    was applied.
+    merged header cell -- Google's gviz export wrote merged text into a single
+    underlying cell and left this one blank, so `LengthKnown` never reached
+    the CSV and the column arrived nameless. The authenticated Sheets API
+    export keeps the header, so this only fires on a gviz-era cache; it
+    restores the name (always immediately left of `LengthKnownUnits`) so the
+    column is addressable by name. Returns True if a fix was applied.
     """
     try:
         u = hdr.index("LengthKnownUnits")
@@ -195,10 +222,10 @@ def patch_header(hdr):
 def load_db(refresh=False):
     """Return {ProjectID: {...fields..., 'fuel': folder}} across gas + oil tabs."""
     db = {}
-    for fuel, gid in DB_TABS.items():
+    for fuel, title in DB_TABS.items():
         path = CACHE / f"db_{fuel}.csv"
         if refresh or not path.exists():
-            download(GVIZ.format(id=SHEET_ID, gid=gid), path, f"DB tab {fuel}")
+            fetch_db_tab(title, path)
         rows = list(csv.reader(path.open(encoding="utf-8")))
         if patch_header(rows[HEADER_ROW]):
             # rewrite the cached export so it no longer carries a blank header

@@ -24,12 +24,15 @@ length) live in qc_routes.py, which runs at intake; this gate exists because
 batch imports have historically bypassed intake QC.
 
 Data sources (same as qc_routes.py, cached in ~/.cache/gem-route-qc):
-  - tracker DB tabs via the public gviz CSV export (no credentials)
+  - tracker DB tabs via the authenticated Sheets API (`gws` CLI, read-only
+    work profile; anonymous CSV export was disabled org-wide 2026-07-29)
   - Natural Earth 10m admin_0 countries GeoJSON
 
-If a download fails (network hiccup in CI), the check is SKIPPED with a loud
-warning and exit 0 -- normalization must not be blocked by Google/GitHub
-availability.
+If a download fails, the check is SKIPPED with a loud warning and exit 0 --
+normalization must not be blocked by Google/GitHub availability. NOTE: in CI
+there is no gws install or credential, so the DB fetch always fails there and
+this check now effectively runs only on local machines (CI skips it unless a
+Sheets service-account secret is wired up someday).
 
 Usage:
   check_route_countries.py            # check every route in the repo
@@ -41,6 +44,8 @@ Exit codes: 0 = ok/skipped, 1 = at least one route failed. Stdlib only.
 import argparse
 import csv
 import json
+import os
+import subprocess
 import sys
 import unicodedata
 import urllib.request
@@ -51,14 +56,20 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 ROUTES_DIR = REPO_ROOT / "data" / "individual-routes"
 CACHE = Path.home() / ".cache" / "gem-route-qc"
 
-# same sheet + tabs as qc_routes.py
+# same sheet + tabs as qc_routes.py. Anonymous CSV endpoints (gviz /
+# export?format=csv) were deliberately disabled org-wide on 2026-07-29: the
+# sheet is readable only through the authenticated Sheets API, here via the
+# read-only `gws` work profile. Never reintroduce a public-URL fallback. In CI
+# (no gws, no credentials) the fetch fails and the check is skipped as below.
 SHEET_ID = "1foPLE6K-uqFlaYgLPAUxzeXfDO5wOOqE7tibNHeqTek"
-DB_TABS = {
-    "gas-pipelines": "1020144097",
-    "liquid-pipelines": "456134080",
+DB_TABS = {  # fuel folder -> tab title
+    "gas-pipelines": "Gas pipelines",
+    "liquid-pipelines": "Oil/NGL pipelines",
 }
-GVIZ = ("https://docs.google.com/spreadsheets/d/{id}/gviz/tq"
-        "?tqx=out:csv&gid={gid}")
+GWS_ENV = {
+    "GOOGLE_WORKSPACE_CLI_CONFIG_DIR": str(Path.home() / ".config" / "gws-gem"),
+    "GOOGLE_WORKSPACE_CLI_KEYRING_BACKEND": "file",
+}
 HEADER_ROW = 2  # rows 0-1 are annotation rows
 
 NE_NAME = "ne_10m_admin_0_countries.geojson"
@@ -117,13 +128,33 @@ def fetch(url, dest, note, refresh):
     return data
 
 
+def fetch_db_tab(title, dest, refresh):
+    """One tracker tab via the authenticated Sheets API (`gws` CLI, read-only
+    work profile), cached as a CSV grid in the same shape qc_routes.py writes.
+    Raises if gws is unavailable (e.g. CI) -- callers treat that as SKIP."""
+    if not refresh and dest.exists():
+        return list(csv.reader(dest.read_text(encoding="utf-8").splitlines()))
+    print(f"  downloading DB tab {title!r} via gws ...", file=sys.stderr)
+    out = subprocess.run(
+        ["gws", "sheets", "spreadsheets", "values", "get", "--params",
+         json.dumps({"spreadsheetId": SHEET_ID, "range": f"'{title}'"})],
+        env={**os.environ, **GWS_ENV},
+        capture_output=True, text=True, check=True).stdout
+    # the CLI prints a non-JSON preamble line ("Using keyring backend: file")
+    values = json.loads(out[out.index("{"):])["values"]
+    width = max(len(r) for r in values)
+    rows = [r + [""] * (width - len(r)) for r in values]
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    with dest.open("w", newline="", encoding="utf-8") as fh:
+        csv.writer(fh, quoting=csv.QUOTE_ALL).writerows(rows)
+    return rows
+
+
 def load_db_countries(refresh):
     """{ProjectID: set of DB country strings (CountriesOrAreas + Start/End)}."""
     out = {}
-    for fuel, gid in DB_TABS.items():
-        raw = fetch(GVIZ.format(id=SHEET_ID, gid=gid),
-                    CACHE / f"db_{fuel}.csv", f"DB tab {fuel}", refresh)
-        rows = list(csv.reader(raw.decode("utf-8").splitlines()))
+    for fuel, title in DB_TABS.items():
+        rows = fetch_db_tab(title, CACHE / f"db_{fuel}.csv", refresh)
         hdr = rows[HEADER_ROW]
         idx = {name: i for i, name in enumerate(hdr) if name}
 
