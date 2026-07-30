@@ -1,9 +1,52 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature", 
-            "geometry": null
-        }
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "ProjectID": "P6692"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      26.932375,
+      30.846188
+     ],
+     [
+      26.953066,
+      30.801941
+     ],
+     [
+      26.945755,
+      30.787279
+     ],
+     [
+      26.93682,
+      30.769386
+     ],
+     [
+      26.931158,
+      30.750671
+     ],
+     [
+      26.925174,
+      30.729298
+     ],
+     [
+      26.898921,
+      30.717252
+     ],
+     [
+      26.815602,
+      30.675657
+     ],
+     [
+      26.705517,
+      30.621219
+     ]
     ]
+   }
+  }
+ ]
 }
