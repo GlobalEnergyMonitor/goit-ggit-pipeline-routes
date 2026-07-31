@@ -1,9 +1,28 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature", 
-            "geometry": null
-        }
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "ProjectID": "P7674"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      109.542412,
+      24.378461
+     ],
+     [
+      109.644158,
+      24.427193
+     ],
+     [
+      109.745983,
+      24.475856
+     ]
     ]
+   }
+  }
+ ]
 }
