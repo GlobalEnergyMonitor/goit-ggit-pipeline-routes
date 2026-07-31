@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P1860"}, "geometry": {"type": "LineString", "coordinates": [[19.922649, 28.301594], [19.7701, 28.9162]]}}
+{"type": "Feature", "properties": {"ProjectID": "P1860", "country": "Libya", "fuel_type": "Natural Gas", "status": "Operating", "region": "Africa", "pipe_type": "National", "operator": "Waha Oil Company", "Project": "Waha - Nasser", "Shareholde": "Waha Oil Company", "Length": 48.0, "Diameter": 24.0, "About": "", "Links": " ", "Engineer": " ", "Construct": " ", "Contact": "Anne Vedvik", "Poistion": "Technical Manager", "Co_name": "Waha Oil Company", "Tel": "+218 21 3337161", "Web": "https://www.wahaoil.net/", "Start": "Waha field, Libya", "End_": "Nasser field, Libya", "Descript": "Waha Oil operated pipeline from Waha field to Nasser field", "Comm_1": " ", "email": "anne.vedvik@conocophillips.com", "Cap": "Not specified", "Capacity_mmcfd": 600.0, "Capex": null, "OBJECTID_1": 489, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1720175285000}, "geometry": {"type": "LineString", "coordinates": [[19.786061, 28.838757], [19.790876, 28.788056], [19.863669, 28.433802], [19.884809, 28.392676], [19.891967, 28.232608]]}}
 ]
 }

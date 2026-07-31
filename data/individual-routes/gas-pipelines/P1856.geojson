@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P1856"}, "geometry": {"type": "LineString", "coordinates": [[20.987025, 28.925529], [20.768509, 29.063142], [20.515029, 29.259051], [20.244069, 29.482488], [20.203279, 29.52306], [20.019725, 29.604155], [19.914837, 29.669997], [19.903183, 29.776267], [19.897355, 29.819249], [19.754591, 30.197697], [19.716715, 30.265664], [19.658444, 30.341128], [19.590704, 30.408996]]}}
+{"type": "Feature", "properties": {"ProjectID": "P1856", "country": null, "fuel_type": null, "status": null, "region": null, "pipe_type": null, "operator": null, "Project": null, "Shareholde": null, "Length": null, "Diameter": null, "About": null, "Links": null, "Engineer": null, "Construct": null, "Contact": null, "Poistion": null, "Co_name": null, "Tel": null, "Web": null, "Start": null, "End_": null, "Descript": null, "Comm_1": null, "email": null, "Cap": null, "Capacity_mmcfd": null, "Capex": null, "OBJECTID_1": null, "created_user": null, "created_date": null, "last_edited_user": null, "last_edited_date": null}, "geometry": {"type": "LineString", "coordinates": [[19.608715, 30.38688], [19.63669, 30.364889], [19.722028, 30.265511], [19.796921, 30.063027], [19.84996, 29.901139], [19.895851, 29.779204], [19.892469, 29.721707], [19.879475, 29.711489], [19.905363, 29.711897], [19.923098, 29.710356], [19.910188, 29.646368], [20.006161, 29.60144], [20.198723, 29.509948], [20.202068, 29.493989], [20.739289, 29.066528], [20.776081, 29.039108], [20.995763, 28.918177]]}}
 ]
 }
