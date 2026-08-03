@@ -147,7 +147,11 @@ GEOCODE_FAR_KM = 50.0      # geocoded DB location this far from endpoint -> WARN
 OFFSHORE_TOL_KM = 25.0     # endpoint this far offshore still counts as a country
                            # (Natural Earth 10m omits small islands; Gulf/coastal
                            # terminals sit a fair way from the mainland polygon)
-CRUDE_ACCURACIES = {"low", "medium", "no route", ""}  # big jumps expected here
+# big jumps expected here. 'very low (straight line/schematic)' is the crudest
+# tier of all -- omitting it made every correctly-classified 2-point schematic
+# warn about being a 2-point schematic.
+CRUDE_ACCURACIES = {"very low (straight line/schematic)",
+                    "low", "medium", "no route", ""}
 
 
 # --------------------------------------------------------------------------- #
