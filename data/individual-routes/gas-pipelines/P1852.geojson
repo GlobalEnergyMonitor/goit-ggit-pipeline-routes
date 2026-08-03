@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P1852"}, "geometry": null}
+{"type": "Feature", "properties": {"ProjectID": "P1852", "id": "ME2026-0070", "commodity": "gas", "status_class": "in_service", "name": null, "name_dist_pt": null, "name_ambiguous": null, "name_confidence": null, "commodity_conflict": null, "other_names": null, "diameter_in": "16", "length_km": 717.13, "n_vertices": 75, "legend_class": "gas_in_service", "stroke_rgb": "#d7191f", "dashed": false, "source_map": "me2026", "source_file": "../energy-map-of-the-middle-east-2026-peregrine-bush.pdf", "source_page": 1, "source_title": "Energy Infrastructure Map of the Middle East, 2026 edition", "source_publisher": "Petroleum Economist / World Oil / Gulf Energy Information / Global Energy Infrastructure", "geometry_source": "stroke", "georef_order": 2, "georef_source": "map's own coastline vector registered to Natural Earth 10m coastline+lakes by trimmed ICP", "georef_insample_rmse_km": 0.97, "georef_holdout_layer": "ne_10m_admin_0_countries vs the map's own border strokes", "georef_holdout_median_km": 1.45, "georef_holdout_rmse_km": 1.6, "drawn_feature_offset_median_km": 3.06, "accuracy_tier": "medium"}, "geometry": {"type": "LineString", "coordinates": [[47.453951, 30.124108], [47.346264, 30.364389], [47.332593, 30.443712], [47.32087, 30.494625], [47.294947, 30.526129], [47.242479, 30.552922], [47.108142, 30.648936], [46.707685, 30.770991], [46.472888, 30.890444], [46.344157, 31.004725]]}}
 ]
 }
