@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P8043", "country": "Libya", "fuel_type": "Natural Gas", "status": "Operating", "region": "Africa", "pipe_type": "National", "operator": "Zueitina Oil Company", "Project": "Intisar A - Zueitina", "Shareholde": "Zueitina Oil Company", "Length": 118.0, "Diameter": 41.0, "About": "", "Links": " ", "Engineer": " ", "Construct": " ", "Contact": "Tariq Khelifa", "Poistion": "Senior Corrosion Engineer", "Co_name": "Zueitina Oil Company", "Tel": "+218 21 4440956", "Web": "http://www.zueitina.com.ly/en/", "Start": "Intisar A field, Libya", "End_": "Zueitina, Lobya", "Descript": "Zueitina Oil operated pipeline from Intisar A field to Zueitina", "Comm_1": " ", "email": "khalifa.works@yahoo.com", "Cap": "Not specified", "Capacity_mmcfd": 1700.0, "Capex": null, "OBJECTID_1": 484, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1720624180000}, "geometry": {"type": "LineString", "coordinates": [[20.080331, 30.89267], [20.08293, 30.880881], [20.086099, 30.870141], [20.117586, 30.750059], [20.151288, 30.685913], [20.263212, 30.588438], [20.362987, 30.319517], [20.481031, 29.994139], [20.656685, 29.533852], [20.772686, 29.214622], [20.782822, 29.06002], [20.776081, 29.039108]]}}
+]
+}
