@@ -1,7 +1,8 @@
 {
 "type": "FeatureCollection",
+"name": "P3988",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "ProjectID": "P3988" }, "geometry": null }
+{ "type": "Feature", "properties": { "country": "Libya", "fuel_type": "Natural Gas", "status": "Operating", "region": "Africa", "pipe_type": "National", "operator": "Arabian Gulf Oil Company", "Project": "Sarir C - GMMR Power Pipeline", "Shareholde": "Arabian Gulf Oil Company (100%)", "Length": 55.0, "Diameter": 16.0, "About": "System runs from the Sarir C Field to the GMMR Power Station", "Links": " ", "Engineer": " ", "Construct": " ", "Contact": "Gibrel Alnaas", "Poistion": "Senior Project Engineer", "Co_name": "Arabian Gulf Oil Company", "Tel": "+218 61 2228931", "Web": "http://agoco.ly/index.php/ar", "Start": "Sarir C field, Libya", "End_": "GMMR Power Station, Libya", "Descript": "Agoco operated pipeline from Sarir C field to GMMR Power Station", "Comm_1": " ", "email": "g.alnaas@agoco.com.ly", "Cap": "Not specified", "Capacity_mmcfd": 300.0, "Capex": null, "OBJECTID_1": 497, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1728466102000 }, "geometry": { "type": "LineString", "coordinates": [ [ 21.234062385628107, 28.16544513807062 ], [ 21.321076440872904, 28.120311761863888 ], [ 21.408090496117712, 27.984797667933268 ], [ 21.621037139575485, 27.594444191334297 ], [ 22.245326674182298, 27.573222165151162 ], [ 22.501719113606974, 27.649308426842953 ] ] } }
 ]
 }
