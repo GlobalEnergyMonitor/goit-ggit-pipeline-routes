@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "P8048",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "country": "Libya", "fuel_type": "Natural Gas", "status": "Operating", "region": "Africa", "pipe_type": "National", "operator": "Sirte Oil Company", "Project": "Raguba -Nasser/Marsa el Braga Pipeline", "Shareholde": "Sirte Oil Company", "Length": 54.0, "Diameter": 20.0, "About": "", "Links": " ", "Engineer": " ", "Construct": " ", "Contact": "Safdar Toor", "Poistion": "Senior Process Engineer", "Co_name": "Sirte Oil Company", "Tel": "+218 21 3610376", "Web": "https://www.sirteoil.com.ly/", "Start": "Raguba field, Libya", "End_": "Nasser - Marsa el Brega Pipeline", "Descript": "Sirte Oil operated pipeline from Raguba field to Nasser - Marsa el Brega Pipeline", "Comm_1": " ", "email": "", "Cap": "Not specified", "Capacity_mmcfd": 400.0, "Capex": null, "OBJECTID_1": 485, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1721044301000 }, "geometry": { "type": "LineString", "coordinates": [ [ 19.8355160382518, 29.449298698507512 ], [ 19.598616382925712, 29.365078050486872 ], [ 19.461082911555177, 29.315126216868524 ], [ 19.438634083571934, 29.277519475920109 ], [ 19.429621525278215, 29.258406778493345 ], [ 19.383599376205414, 29.21238094268077 ], [ 19.357224864616484, 29.19890864553123 ], [ 19.241019220772653, 29.143873025571114 ], [ 19.09582572963448, 29.075376466402691 ], [ 19.080345798063462, 29.076248521984716 ] ] } }
+]
+}
