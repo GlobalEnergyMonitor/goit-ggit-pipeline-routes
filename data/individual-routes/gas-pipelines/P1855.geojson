@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P1855"}, "geometry": null}
+{"type": "Feature", "properties": {"ProjectID": "P1855", "country": "Libya", "fuel_type": "Natural Gas", "status": "Operating", "region": "Africa", "pipe_type": "National", "operator": "Eni / National Oil Corporation", "Project": "Western Libya Gas Project", "Shareholde": "Eni, National Oil Corporation", "Length": 65.0, "Diameter": 32.0, "About": "", "Links": "1064", "Engineer": " ", "Construct": " ", "Contact": "Javed Akhtar Khan", "Poistion": "Senior Project Engineer", "Co_name": "National Oil Corporation", "Tel": "(+218) 214 446 181", "Web": "https://noc.ly/", "Start": "Bahr es Salam field, offshore Libya", "End_": "Mellitah, Libya", "Descript": "Eni and National Oil Corporation operated pipeline from Bahr es Salam field to Mellitah", "Comm_1": "2004", "email": "", "Cap": "11 billion cm/annum", "Capacity_mmcfd": 1064.0, "Capex": null, "OBJECTID_1": 477, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1741686198000}, "geometry": {"type": "LineString", "coordinates": [[12.690599, 33.72385], [12.525386, 33.408821], [12.232615, 32.853657]]}}
 ]
 }
