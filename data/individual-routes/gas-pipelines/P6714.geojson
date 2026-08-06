@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P6714"}, "geometry": null}
+{"type": "Feature", "properties": {"ProjectID": "P6714", "country": "Libya", "fuel_type": "Natural Gas", "status": "Operating", "region": "Africa", "pipe_type": "National", "operator": "Agip Oil", "Project": "Bu Attifel - Intisar A", "Shareholde": "Agip Oil", "Length": 83.0, "Diameter": 34.0, "About": "", "Links": " ", "Engineer": " ", "Construct": " ", "Contact": "Chinanu Agoha", "Poistion": "Pipeline Engineer", "Co_name": "Agip Oil", "Tel": "+234 9 4611900", "Web": "https://www.eni.com", "Start": "Bu Attifel field, Libya", "End_": "Intisar A field, Libya", "Descript": "Agip Oil operated pipeline from Bu Attifel field to Intisar A field", "Comm_1": " ", "email": "chinaru.agooha@eni.com", "Cap": "Not specified", "Capacity_mmcfd": 1200.0, "Capex": null, "OBJECTID_1": 491, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1676379479000}, "geometry": {"type": "LineString", "coordinates": [[20.776081, 29.039108], [20.829817, 29.002836], [20.995789, 28.917649], [21.125166, 28.871217], [21.304808, 28.868241], [21.581771, 28.870103], [21.767725, 28.866016], [22.033173, 28.847437], [22.05211, 28.862898]]}}
 ]
 }

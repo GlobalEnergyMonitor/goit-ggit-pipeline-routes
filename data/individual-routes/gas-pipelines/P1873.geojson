@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P1873"}, "geometry": null}
+{"type": "Feature", "properties": {"ProjectID": "P1873", "country": "Libya", "fuel_type": "Natural Gas", "status": "Operating", "region": "Africa", "pipe_type": "National", "operator": "Sirte Oil Company", "Project": "As Sarah - Intisar A", "Shareholde": "Sirte Oil Company", "Length": 53.0, "Diameter": 8.0, "About": "Sirte Oil operated pipeline from As Sarah field to Intisar A field", "Links": " ", "Engineer": " ", "Construct": " ", "Contact": "Safdar Toor", "Poistion": "Senior Process Engineer", "Co_name": "Sirte Oil Company", "Tel": "+218 21 3610376", "Web": "https://www.sirteoil.com.ly/", "Start": "As Sarah field, Libya", "End_": "Intisar A field, Libya", "Descript": "Sirte Oil operated pipeline from As Sarah field to Intisar A field", "Comm_1": " ", "email": " ", "Cap": "Not specified", "Capacity_mmcfd": 10000.0, "Capex": null, "OBJECTID_1": 496, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1722340923000}, "geometry": {"type": "LineString", "coordinates": [[20.776081, 29.039108], [20.800185, 29.057844], [21.005543, 29.105219], [21.132813, 29.120362], [21.221324, 29.109957], [21.389735, 29.171431], [21.536989, 29.254065], [21.649094, 29.336175]]}}
 ]
 }
