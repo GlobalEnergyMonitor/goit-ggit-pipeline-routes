@@ -1,7 +1,8 @@
 {
 "type": "FeatureCollection",
+"name": "P1870",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "ProjectID": "P1870" }, "geometry": null }
+{ "type": "Feature", "properties": { "country": null, "fuel_type": null, "status": null, "region": null, "pipe_type": null, "operator": null, "Project": null, "Shareholde": null, "Length": null, "Diameter": null, "About": null, "Links": null, "Engineer": null, "Construct": null, "Contact": null, "Poistion": null, "Co_name": null, "Tel": null, "Web": null, "Start": null, "End_": null, "Descript": null, "Comm_1": null, "email": null, "Cap": null, "Capacity_mmcfd": null, "Capex": null, "OBJECTID_1": null, "created_user": null, "created_date": null, "last_edited_user": null, "last_edited_date": null }, "geometry": { "type": "LineString", "coordinates": [ [ 19.87947517303698, 29.711489056230114 ], [ 19.905363146288227, 29.711896651008551 ], [ 19.923098182497341, 29.710356136848013 ], [ 19.910187900661196, 29.646368403671474 ], [ 20.006161377757294, 29.601440066913767 ], [ 20.198722566703168, 29.509947631516628 ], [ 20.202068091348906, 29.493989364691707 ], [ 20.739289071015953, 29.066528348331815 ], [ 20.776081102409695, 29.039107531351497 ], [ 20.995763206600628, 28.918177328711941 ] ] } }
 ]
 }
