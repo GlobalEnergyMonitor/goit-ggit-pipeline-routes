@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "P8062",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "country": null, "fuel_type": null, "status": null, "region": null, "pipe_type": null, "operator": null, "Project": null, "Shareholde": null, "Length": null, "Diameter": null, "About": null, "Links": null, "Engineer": null, "Construct": null, "Contact": null, "Poistion": null, "Co_name": null, "Tel": null, "Web": null, "Start": null, "End_": null, "Descript": null, "Comm_1": null, "email": null, "Cap": null, "Capacity_mmcfd": null, "Capex": null, "OBJECTID_1": null, "created_user": null, "created_date": null, "last_edited_user": null, "last_edited_date": null }, "geometry": { "type": "LineString", "coordinates": [ [ 21.503262119041654, 28.925996602064696 ], [ 21.516058303636481, 28.933836164672247 ], [ 21.540371054366648, 28.930476424722741 ], [ 21.563404186637332, 28.937195795717972 ], [ 21.604351977340762, 28.975264000581454 ], [ 21.624825872692487, 29.005484660689316 ], [ 21.640181294206275, 29.049121126113945 ], [ 21.624825872692487, 29.079320179207105 ], [ 21.608190832719213, 29.131867788373068 ], [ 21.604351977340762, 29.151985296998898 ], [ 21.609470451178698, 29.184388552304611 ], [ 21.614588925016626, 29.235765829402855 ], [ 21.615868543476108, 29.270375111671562 ], [ 21.638901675746791, 29.311667630380832 ] ] } }
-]
-}
