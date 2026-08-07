@@ -1,6 +1,0 @@
-{
-"type": "FeatureCollection",
-"features": [
-{"type": "Feature", "properties": {"ProjectID": "P8062", "country": null, "fuel_type": null, "status": null, "region": null, "pipe_type": null, "operator": null, "Project": null, "Shareholde": null, "Length": null, "Diameter": null, "About": null, "Links": null, "Engineer": null, "Construct": null, "Contact": null, "Poistion": null, "Co_name": null, "Tel": null, "Web": null, "Start": null, "End_": null, "Descript": null, "Comm_1": null, "email": null, "Cap": null, "Capacity_mmcfd": null, "Capex": null, "OBJECTID_1": null, "created_user": null, "created_date": null, "last_edited_user": null, "last_edited_date": null}, "geometry": {"type": "LineString", "coordinates": [[21.503262, 28.925997], [21.516058, 28.933836], [21.540371, 28.930476], [21.563404, 28.937196], [21.604352, 28.975264], [21.624826, 29.005485], [21.640181, 29.049121], [21.624826, 29.07932], [21.608191, 29.131868], [21.604352, 29.151985], [21.60947, 29.184389], [21.614589, 29.235766], [21.615869, 29.270375], [21.638902, 29.311668]]}}
-]
-}
