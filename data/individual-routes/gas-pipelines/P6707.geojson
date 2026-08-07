@@ -1,9 +1,8 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature", 
-            "geometry": null
-        }
-    ]
+"type": "FeatureCollection",
+"name": "P6707",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "country": null, "fuel_type": null, "status": null, "region": null, "pipe_type": null, "operator": null, "Project": null, "Shareholde": null, "Length": null, "Diameter": null, "About": null, "Links": null, "Engineer": null, "Construct": null, "Contact": null, "Poistion": null, "Co_name": null, "Tel": null, "Web": null, "Start": null, "End_": null, "Descript": null, "Comm_1": null, "email": null, "Cap": null, "Capacity_mmcfd": null, "Capex": null, "OBJECTID_1": null, "created_user": null, "created_date": null, "last_edited_user": null, "last_edited_date": null }, "geometry": { "type": "LineString", "coordinates": [ [ 16.34548367964257, 31.191579364070808 ], [ 16.347, 31.2174 ] ] } }
+]
 }
