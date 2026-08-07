@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P8061", "country": "Libya", "fuel_type": "Natural Gas", "status": "Operating", "region": "Africa", "pipe_type": "National", "operator": "Arabian Gulf Oil Company", "Project": "Messla - Sarir C", "Shareholde": "Arabian Gulf Oil Company (100%)", "Length": 27.0, "Diameter": 20.0, "About": "Agoco operated pipeline from Messla field to Sarir C field", "Links": " ", "Engineer": " ", "Construct": " ", "Contact": "Gibrel Alnaas", "Poistion": "Senior Project Engineer", "Co_name": "Arabian Gulf Oil Company", "Tel": "+218 61 2228931", "Web": "http://agoco.ly/index.php/ar", "Start": "Messla field, Libya", "End_": "Sarir C field, Libya", "Descript": "Agoco operated pipeline from Messla field to Sarir C field", "Comm_1": " ", "email": "g.alnaas@agoco.com.ly", "Cap": "Not specified", "Capacity_mmcfd": 400.0, "Capex": null, "OBJECTID_1": 498, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1728466102000}, "geometry": {"type": "LineString", "coordinates": [[22.338293, 27.994164], [22.372877, 27.909403], [22.371253, 27.878215], [22.501719, 27.649308]]}}
+]
+}

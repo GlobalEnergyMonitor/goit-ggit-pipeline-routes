@@ -1,0 +1,6 @@
+{
+"type": "FeatureCollection",
+"features": [
+{"type": "Feature", "properties": {"ProjectID": "P8060", "country": "Libya", "fuel_type": "Natural Gas", "status": "Operating", "region": "Africa", "pipe_type": "National", "operator": "Waha Oil Company", "Project": "Masrab - Gialo", "Shareholde": "Waha Oil Company", "Length": 31.0, "Diameter": 6.0, "About": "", "Links": " ", "Engineer": " ", "Construct": " ", "Contact": "Anne Vedvik", "Poistion": "Technical Manager", "Co_name": "Waha Oil Company", "Tel": "+218 21 3337161", "Web": "https://www.wahaoil.net/", "Start": "Masrab field, Libya", "End_": "Gialo field, Libya", "Descript": "Waha Oil operated pipeline from Masrab field to Gialo field", "Comm_1": " ", "email": "anne.vedvik@conocophillips.com", "Cap": "Not specified", "Capacity_mmcfd": 10000.0, "Capex": null, "OBJECTID_1": 490, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1720175285000}, "geometry": {"type": "LineString", "coordinates": [[21.379219, 28.709247], [21.432963, 28.713456], [21.456956, 28.714298], [21.535013, 28.71542], [21.592595, 28.716542], [21.652738, 28.63571], [21.703922, 28.612122], [21.818928, 28.472453]]}}
+]
+}
