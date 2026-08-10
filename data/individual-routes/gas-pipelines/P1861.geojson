@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P1861", "country": "Libya", "fuel_type": "Natural Gas", "status": "Operating", "region": "Africa", "pipe_type": "National", "operator": "Waha Oil Company", "Project": "Faregh - Intisar A", "Shareholde": "Waha Oil Company", "Length": 68.0, "Diameter": 24.0, "About": "", "Links": " ", "Engineer": " ", "Construct": " ", "Contact": "Anne Vedvik", "Poistion": "Technical Manager", "Co_name": "Waha Oil Company", "Tel": "+218 21 3337161", "Web": "https://www.wahaoil.net/", "Start": "Faregh field, Libya", "End_": "Intisar A field, Libya", "Descript": "Waha Oil operated pipeline from Faregh field to Intisar A field", "Comm_1": " ", "email": "anne.vedvik@conocophillips.com", "Cap": "Not specified", "Capacity_mmcfd": 600.0, "Capex": null, "OBJECTID_1": 492, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1720175285000}, "geometry": {"type": "LineString", "coordinates": [[21.187337, 28.195908], [21.078708, 28.541189], [21.001765, 28.771933], [20.954806, 28.891034], [20.811246, 28.998188], [20.776081, 29.039108]]}}
+{"type": "Feature", "properties": {"ProjectID": "P1861"}, "geometry": {"type": "MultiLineString", "coordinates": [[[21.231148, 28.164767], [21.049442, 28.525149], [20.9893, 28.660398], [20.886931, 28.850125], [20.85686, 28.902929], [20.804395, 28.968442], [20.793519, 28.995027], [20.776081, 29.039108]]]}}
 ]
 }

@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P1857", "country": "Libya", "fuel_type": "Natural Gas", "status": "Operating", "region": "Africa", "pipe_type": "National", "operator": "Zueitina Oil Company", "Project": "Intisar D - Intisar A", "Shareholde": "Zeuitina Oil Company", "Length": 16.0, "Diameter": 40.0, "About": "Zueitina Oil operated pipeline from Intisar D field to Intisar A field", "Links": " ", "Engineer": " ", "Construct": " ", "Contact": "Tariq Khelifa", "Poistion": "Senior Corrosion Engineer", "Co_name": "Zueitina Oil Company", "Tel": "+218 21 4440956", "Web": "http://www.zueitina.com.ly/en/", "Start": "Intisar D field, Libya", "End_": "Intisar A field, Libya", "Descript": "Zueitina Oil operated pipeline from Intisar D field to Intisar A field", "Comm_1": " ", "email": "khalifa.works@yahoo.com", "Cap": "Not specified", "Capacity_mmcfd": 1700.0, "Capex": null, "OBJECTID_1": 495, "created_user": null, "created_date": null, "last_edited_user": "SDE", "last_edited_date": 1720624180000}, "geometry": {"type": "LineString", "coordinates": [[20.776081, 29.039108], [20.798135, 28.990387], [20.927254, 28.892017], [20.954806, 28.891034]]}}
+{"type": "Feature", "properties": {"ProjectID": "P1857"}, "geometry": {"type": "MultiLineString", "coordinates": [[[20.776081, 29.039108], [20.808074, 29.011535], [20.904206, 28.94213], [20.933477, 28.927012], [20.954751, 28.913711]]]}}
 ]
 }
