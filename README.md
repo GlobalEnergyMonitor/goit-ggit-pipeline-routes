@@ -33,6 +33,8 @@ Route files are named `[ProjectID].geojson` (e.g. `P1234.geojson`), and each Pro
 }
 ```
 
+**Don't repeat segment geometry on a system/network row.** When a pipeline's route is already drawn under its individual segment ProjectIDs, the parent `SYSTEM/NETWORK INFO` row keeps the empty file above — never a merge of its segments' geometry. (In the tracker that row reads `RouteType: Included in other ProjectID`, `RouteAccuracy: no route`.)
+
 **Coordinates are WGS 84.** The [GeoJSON spec](https://geojson.org/) fixes the coordinate reference system as WGS 84 (EPSG:4326), so no `crs` member is needed — or allowed. Positions are `[longitude, latitude]` pairs only, no Z/elevation values.
 
 **Only the filename identifies the route.** You don't need to include any pipeline attributes (name, status, etc.) in the file's properties — the `[ProjectID].geojson` filename is the only required label. Extra properties are fine but unnecessary.
