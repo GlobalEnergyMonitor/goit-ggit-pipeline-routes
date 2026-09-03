@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
 "features": [
-{"type": "Feature", "properties": {"ProjectID": "P4066", "id": null, "commodity": null, "status_class": null, "name": null, "name_dist_pt": null, "name_ambiguous": false, "name_confidence": null, "commodity_conflict": null, "other_names": null, "diameter_in": null, "length_km": null, "n_vertices": null, "legend_class": null, "stroke_rgb": null, "dashed": false, "source_map": null, "source_file": null, "source_page": null, "source_title": null, "source_publisher": null, "geometry_source": null, "georef_order": null, "georef_source": null, "georef_insample_rmse_km": null, "georef_holdout_layer": null, "georef_holdout_median_km": null, "georef_holdout_rmse_km": null, "drawn_feature_offset_median_km": null, "accuracy_tier": null}, "geometry": {"type": "LineString", "coordinates": [[44.403285, 33.260297], [44.378034, 33.257213]]}}
+{"type": "Feature", "properties": {"ProjectID": "P4066"}, "geometry": {"type": "MultiLineString", "coordinates": [[[44.3773, 33.258564], [44.378559, 33.249656], [44.378651, 33.24559], [44.378555, 33.239568]]]}}
 ]
 }
