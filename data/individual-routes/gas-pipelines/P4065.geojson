@@ -1,8 +1,1 @@
-{
-"type": "FeatureCollection",
-"name": "P4065",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "id": null, "commodity": null, "status_class": null, "name": null, "name_dist_pt": null, "name_ambiguous": false, "name_confidence": null, "commodity_conflict": null, "other_names": null, "diameter_in": null, "length_km": null, "n_vertices": null, "legend_class": null, "stroke_rgb": null, "dashed": false, "source_map": null, "source_file": null, "source_page": null, "source_title": null, "source_publisher": null, "geometry_source": null, "georef_order": null, "georef_source": null, "georef_insample_rmse_km": null, "georef_holdout_layer": null, "georef_holdout_median_km": null, "georef_holdout_rmse_km": null, "drawn_feature_offset_median_km": null, "accuracy_tier": null }, "geometry": { "type": "LineString", "coordinates": [ [ 44.791033, 32.037171 ], [ 44.69328, 31.97951 ] ] } }
-]
-}
+{"type": "FeatureCollection", "name": "P4065", "crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:OGC:1.3:CRS84"}}, "features": [{"type": "Feature", "properties": {}, "geometry": {"type": "MultiLineString", "coordinates": [[[44.900479223707244, 32.02986168860645], [44.916989652695264, 32.03421623095213], [44.938178036563215, 32.040980912788605], [44.98037135508814, 32.05163232952602], [45.01737020070772, 32.060700303200605]]]}}]}
