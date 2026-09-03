@@ -671,6 +671,106 @@ def print_report(results):
         print(f"WARN routes: {warned}")
 
 
+# --- empty-feature stripping -------------------------------------------------
+# Some researcher exports carry features whose geometry has an empty
+# coordinates array ("coordinates": []). RFC 7946 requires at least two
+# positions in a LineString, so these are invalid GeoJSON -- but they slip
+# past validate_geojson.py, which only checks the positions that are there.
+# They are pure noise (one upload carried 51 of them), so routes are stripped
+# on the way into the repo: main keeps the researcher's file as submitted
+# apart from these dead features.
+#
+# The edit is done on the raw text rather than by re-serializing, so the
+# surviving features keep their original byte-for-byte formatting and full
+# coordinate precision (main is the full-precision copy; only the normalized
+# branch rounds). A file is never stripped down to zero features -- a route
+# with no geometry at all is the null-geojson convention in README.md, not
+# something this function should invent.
+
+def _is_empty_geometry(obj):
+    """True for a feature whose geometry exists but holds no usable position."""
+    if not isinstance(obj, dict):
+        return False
+    geom = obj.get("geometry")
+    if not isinstance(geom, dict):
+        return False  # null geometry is the deliberate empty-route convention
+    coords = geom.get("coordinates")
+    if coords is None:
+        return False
+    gtype = geom.get("type")
+    if gtype in ("LineString", "MultiPoint"):
+        return len(coords) < 2
+    if gtype == "MultiLineString":
+        return all(len(part) < 2 for part in coords)
+    if gtype == "Point":
+        return len(coords) == 0
+    return False
+
+
+def _feature_spans(text):
+    """Locate each element of the top-level "features" array in the raw text.
+
+    Returns (spans, open_idx, close_idx) where spans is a list of
+    (start, end, parsed_object). Raises ValueError if the array cannot be
+    found, so callers can fall back to a plain copy.
+    """
+    key = text.find('"features"')
+    if key < 0:
+        raise ValueError('no "features" member')
+    open_idx = text.find("[", key)
+    if open_idx < 0:
+        raise ValueError('no "features" array')
+    decoder = json.JSONDecoder()
+    spans = []
+    i = open_idx + 1
+    while True:
+        while i < len(text) and text[i] in " \t\r\n":
+            i += 1
+        if i >= len(text):
+            raise ValueError("unterminated features array")
+        if text[i] == "]":
+            return spans, open_idx, i
+        obj, end = decoder.raw_decode(text, i)
+        spans.append((i, end, obj))
+        i = end
+        while i < len(text) and text[i] in " \t\r\n":
+            i += 1
+        if i < len(text) and text[i] == ",":
+            i += 1
+
+
+def strip_empty_features(path):
+    """Return (text, n_removed) with empty-geometry features deleted.
+
+    text is None when nothing needed removing, so callers can copy the file
+    unchanged. Falls back to no-op if the file cannot be scanned.
+    """
+    text = path.read_text()
+    try:
+        spans, _, close_idx = _feature_spans(text)
+    except (ValueError, json.JSONDecodeError):
+        return None, 0
+    keep = [s for s in spans if not _is_empty_geometry(s[2])]
+    n_drop = len(spans) - len(keep)
+    if not n_drop or not keep:
+        return None, 0
+    # Everything before the first feature and from the last feature's end
+    # onwards is copied verbatim. Between two kept features, the separator
+    # is the text that originally followed the earlier one -- so a file
+    # written one-feature-per-line keeps its newlines and a file written as
+    # a single long line stays a single long line, and the diff is limited
+    # to the removed features.
+    index = {start: i for i, (start, _e, _o) in enumerate(spans)}
+    out = [text[:spans[0][0]]]
+    for i, (start, end, _obj) in enumerate(keep):
+        if i:
+            prev = index[keep[i - 1][0]]
+            out.append(text[spans[prev][1]:spans[prev + 1][0]])
+        out.append(text[start:end])
+    out.append(text[spans[-1][1]:])
+    return "".join(out), n_drop
+
+
 def do_copy(results, include, force):
     include = set(include or [])
     copied, skipped = [], []
@@ -681,20 +781,29 @@ def do_copy(results, include, force):
             continue
         dest_dir = ROUTES_DIR / r.fuel
         dest = dest_dir / f"{r.pid}.geojson"
+        stripped, n_empty = strip_empty_features(r.path)
         if dest.exists() and not force:
-            # only copy over an existing file when content actually differs
+            # only copy over an existing file when content actually differs;
+            # compare against what would be written, so a file already
+            # stripped in the repo counts as unchanged
             try:
-                if dest.read_bytes() == r.path.read_bytes():
+                incoming = (stripped.encode() if stripped is not None
+                            else r.path.read_bytes())
+                if dest.read_bytes() == incoming:
                     skipped.append(r)
                     continue
             except Exception:
                 pass
         dest_dir.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(r.path, dest)
-        copied.append((r, dest))
+        if stripped is None:
+            shutil.copy2(r.path, dest)
+        else:
+            dest.write_text(stripped)
+        copied.append((r, dest, n_empty))
     print(f"\ncopied {len(copied)} route(s):")
-    for r, dest in copied:
-        print(f"   {r.pid} -> {dest.relative_to(REPO_ROOT)}")
+    for r, dest, n_empty in copied:
+        extra = f"  (dropped {n_empty} empty feature(s))" if n_empty else ""
+        print(f"   {r.pid} -> {dest.relative_to(REPO_ROOT)}{extra}")
     left = [r for r in results if r.status == "FAIL"]
     if left:
         print(f"left behind {len(left)} FAIL route(s): "
