@@ -99,7 +99,7 @@ python3 scripts/qc_routes.py "/path/.../<researcher folder>" --copy             
 python3 scripts/qc_routes.py "/path/.../<researcher folder>" --copy --include P1897 P3961  # also copy these WARN routes
 ```
 
-The copy phase places routes in `data/individual-routes/<fuel>/` (fuel from the DB tab). **PASS** routes are copied automatically; **WARN** routes only when named with `--include`; **FAIL** routes are always left behind. Nothing is committed — review, then create a branch and PR as usual.
+The copy phase places routes in `data/individual-routes/<fuel>/` (fuel from the DB tab). **PASS** routes are copied automatically; **WARN** routes only when named with `--include`; **FAIL** routes are always left behind. Features whose geometry has an empty `coordinates` array (a stray empty feature next to the real trace, common in re-exports) are dropped on copy and reported as `(dropped N empty feature(s))`. Nothing is committed — review, then create a branch and PR as usual.
 
 Reference data (DB tabs, Natural Earth country boundaries, geocode cache) is cached under `~/.cache/gem-route-qc/` and never touches the repo; pass `--refresh` to re-download.
 
