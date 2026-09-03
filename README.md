@@ -101,6 +101,8 @@ python3 scripts/qc_routes.py "/path/.../<researcher folder>" --copy --include P1
 
 The copy phase places routes in `data/individual-routes/<fuel>/` (fuel from the DB tab). **PASS** routes are copied automatically; **WARN** routes only when named with `--include`; **FAIL** routes are always left behind. Features whose geometry has an empty `coordinates` array (a stray empty feature next to the real trace, common in re-exports) are dropped on copy and reported as `(dropped N empty feature(s))`. Nothing is committed — review, then create a branch and PR as usual.
 
+**Map visibility is checked too.** The interim maps are built from the tracker row joined to the route, and the build drops rows whose `Fuel` isn't in the map's fuel set, whose `Status` is blank or `N/A`, whose `PipelineName` or `RouteAccuracy` is blank, and it nulls the geometry of any row still marked `RouteAccuracy: no route`. The QC report flags each of these as a `map:` WARN and lists the affected ProjectIDs on a `MAP-HIDDEN routes` line, so a route never gets merged only to be invisible on the map. Fix the sheet cells, then re-run with `--refresh` to pick up the new values. Blank `CountriesOrAreas` or `Wiki` are INFO only (the route renders, but without a country or grouped card).
+
 Reference data (DB tabs, Natural Earth country boundaries, geocode cache) is cached under `~/.cache/gem-route-qc/` and never touches the repo; pass `--refresh` to re-download.
 
 ## The `normalized` branch (generated — do not edit)

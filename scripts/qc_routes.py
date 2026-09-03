@@ -32,6 +32,12 @@ Checks
         - geometry near-identical to an unrelated project's route
         - fuel-folder mismatch for an existing file
         - a geocoded DB Start/EndLocation far from the matching endpoint
+        - "map:" -- the tracker row lacks something the interim map build
+          needs, so the route would be invisible on the map even once merged:
+          Fuel not in the map's fuel set, PipelineName blank, Status blank /
+          N/A / not a map filter value, RouteAccuracy blank or still 'no route'
+          (the build nulls that geometry). Fix the sheet, then re-run with
+          --refresh.
   INFO  - crude/low-resolution geometry (only elevated when RouteAccuracy is
           high) ; null-island or duplicate consecutive vertices ; new-vs-update
 
@@ -144,6 +150,29 @@ LENGTH_TOL = 0.30          # >30% length mismatch -> WARN
 BIG_JUMP_CRUDE_KM = 40.0   # crude/low-accuracy: INFO cue to refine later
 BIG_JUMP_HIGH_KM = 75.0    # high-accuracy: WARN, unusually long for a detailed trace
 GEOCODE_FAR_KM = 50.0      # geocoded DB location this far from endpoint -> WARN
+
+# Map visibility -- mirrors the row filter in goit-ggit-data-ops
+# releases/downloads/pipeline_exports.py (fetch_pipeline_data +
+# enforce_no_route_null_geometry), which builds ggit/goit_map_latest.geojson
+# for the interim maps. A merged route whose tracker row fails these never
+# reaches the map. Fuel sets come from gem-tracker-constants when importable.
+try:
+    from gem_tracker_constants import GAS_FUEL_OPTIONS, OIL_NGL_COMBINED
+except ImportError:  # fallback copy -- keep in sync with gem-tracker-constants
+    GAS_FUEL_OPTIONS = ["Gas", "Gas and Hydrogen"]
+    OIL_NGL_COMBINED = ["Oil", "NGL", "NGL, oil products", "LPG", "Oil, NGL",
+                        "Oil, NGL, naphtha", "Naphtha (only)",
+                        "Oil products (only)", "Naphtha, oil products",
+                        "Condensate", "Oil, oil products", "Condensate/NGL",
+                        "Oil, condensate"]
+MAP_FUELS = {  # fuel folder -> Fuel values the matching map build keeps
+    "gas-pipelines": set(GAS_FUEL_OPTIONS),                 # --pipeline-type Gas
+    "liquid-pipelines": set(OIL_NGL_COMBINED) | {"CO2"},    # --pipeline-type Oil-NGL
+}
+# Status values the interim map's filter panel knows (goit-ggit-interim-maps
+# trackers/*/config.js `filters`); anything else is filtered out on load.
+MAP_STATUSES = {"operating", "construction", "proposed", "shelved", "mothballed",
+                "cancelled", "retired", "idle", "mixed status"}
 OFFSHORE_TOL_KM = 25.0     # endpoint this far offshore still counts as a country
                            # (Natural Earth 10m omits small islands; Gulf/coastal
                            # terminals sit a fair way from the mainland polygon)
@@ -248,6 +277,9 @@ def load_db(refresh=False):
                 continue
             db[pid] = {
                 "fuel": fuel,
+                "Fuel": get(row, "Fuel"),
+                "PipelineName": get(row, "PipelineName"),
+                "Wiki": get(row, "Wiki"),
                 "StartLocation": get(row, "StartLocation"),
                 "StartCountryOrArea": get(row, "StartCountryOrArea"),
                 "EndLocation": get(row, "EndLocation"),
@@ -443,6 +475,7 @@ class Result:
         self.path = path
         self.pid = pid
         self.status = "PASS"          # PASS | WARN | FAIL
+        self.map_hidden = False       # tracker row would drop it from the map
         self.fuel = None              # target folder
         self.state = None             # NEW | UPDATE | UPDATE(unchanged)
         self.notes = []               # (level, text) ; level in FAIL/WARN/OK/INFO
@@ -452,6 +485,38 @@ class Result:
         order = {"FAIL": 3, "WARN": 2}
         if order.get(level, 0) > order.get(self.status, 0):
             self.status = level
+
+
+def check_map_visibility(res, rec):
+    """Flag tracker-row gaps that would keep a merged route off the interim map."""
+    fuel_ok = MAP_FUELS.get(rec["fuel"], set())
+    problems = []
+    if rec["Fuel"] not in fuel_ok:
+        problems.append(f"Fuel {rec['Fuel'] or '<blank>'!r} is not in the "
+                        f"{rec['fuel']} map's fuel set {sorted(fuel_ok)}")
+    if not rec["PipelineName"]:
+        problems.append("PipelineName blank")
+    st = rec["Status"]
+    if not st or st == "N/A":
+        problems.append(f"Status {st or '<blank>'!r}")
+    elif st.lower() not in MAP_STATUSES:
+        problems.append(f"Status {st!r} is not a map filter value")
+    acc = rec["RouteAccuracy"]
+    if not acc:
+        problems.append("RouteAccuracy blank")
+    elif acc.lower() == "no route":
+        problems.append("RouteAccuracy is 'no route' -- the map build nulls "
+                        "the geometry until the cell is updated")
+    for msg in problems:
+        res.add("WARN", f"map: {msg}")
+    if problems:
+        res.map_hidden = True
+    if not rec["CountriesOrAreas"]:
+        res.add("INFO", "map: CountriesOrAreas blank (renders, but no country "
+                        "in the table/filter)")
+    if not rec["Wiki"]:
+        res.add("INFO", "map: Wiki blank (gets a card of its own; segments of "
+                        "one pipeline won't group)")
 
 
 def check_route(path, db, countries, repo_hash, repo_pid, geocoder):
@@ -476,6 +541,7 @@ def check_route(path, db, countries, repo_hash, repo_pid, geocoder):
                         "(hydrogen routes live in a separate sheet -- check fuel)")
         return res
     res.fuel = rec["fuel"]
+    check_map_visibility(res, rec)
 
     # 3. new vs update + duplicate detection
     lines = line_coords(read_geojson(path))
@@ -669,6 +735,10 @@ def print_report(results):
     if n_warn:
         warned = " ".join(sorted(r.pid for r in results if r.status == "WARN"))
         print(f"WARN routes: {warned}")
+    hidden = sorted(r.pid for r in results if r.map_hidden)
+    if hidden:
+        print(f"MAP-HIDDEN routes (tracker row incomplete -- fix the sheet, then "
+              f"re-run with --refresh): {' '.join(hidden)}")
 
 
 # --- empty-feature stripping -------------------------------------------------
@@ -853,7 +923,7 @@ def main(argv):
         Path(args.json).write_text(json.dumps(
             [{"pid": r.pid, "status": r.status, "fuel": r.fuel,
               "state": r.state, "file": str(r.path),
-              "notes": r.notes} for r in results], indent=2))
+              "map_hidden": r.map_hidden, "notes": r.notes} for r in results], indent=2))
 
     if args.copy:
         do_copy(results, args.include, args.force)
