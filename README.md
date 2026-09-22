@@ -105,6 +105,17 @@ The copy phase places routes in `data/individual-routes/<fuel>/` (fuel from the 
 
 Reference data (DB tabs, Natural Earth country boundaries, geocode cache) is cached under `~/.cache/gem-route-qc/` and never touches the repo; pass `--refresh` to re-download.
 
+### Explaining held uploads to a researcher (`scripts/holds_report.py`)
+
+When triage holds back some of a researcher's uploads, `scripts/holds_report.py` builds a shareable HTML page covering each held route. For every one it draws a map (repo route vs upload), lists the tracker facts, computes a points/length/closest-approach table, and adds a short explanation with a next step. The script computes the maps and numbers. You write only the explanations, in a notes JSON under the git-ignored `ignore/` (it names the researcher):
+
+```
+python3 scripts/holds_report.py ignore/holds-reports/<name>.json --evidence-only   # facts to draft from
+python3 scripts/holds_report.py ignore/holds-reports/<name>.json                   # writes <name>.html alongside
+```
+
+The full workflow (notes template, geocode checks, tone) is in `.claude/skills/holds-report/SKILL.md`.
+
 ## The `normalized` branch (generated — do not edit)
 
 The `main` branch always holds the **original** files exactly as submitted — original metadata, original coordinate precision — so researchers who scrape routes get untouched data.

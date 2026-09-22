@@ -195,3 +195,4 @@ Temporary Items
 
 # codegraph local index
 .codegraph/
+.claude/settings.local.json
