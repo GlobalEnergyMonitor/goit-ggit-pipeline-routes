@@ -32,6 +32,12 @@ Checks
         - geometry near-identical to an unrelated project's route
         - fuel-folder mismatch for an existing file
         - a geocoded DB Start/EndLocation far from the matching endpoint
+        - zero-length parts (every vertex identical) -- a batch-export
+          artifact; whole zero-length features are dropped on --copy
+        - an UPDATE that shrinks the repo route: the upload is much shorter
+          than the file it would replace and further from the DB length, or
+          every upload part already sits verbatim in the repo copy (a
+          partial export of the existing route)
         - "map:" -- the tracker row lacks something the interim map build
           needs, so the route would be invisible on the map even once merged:
           Fuel not in the map's fuel set, PipelineName blank, Status blank /
@@ -150,6 +156,7 @@ LENGTH_TOL = 0.30          # >30% length mismatch -> WARN
 BIG_JUMP_CRUDE_KM = 40.0   # crude/low-accuracy: INFO cue to refine later
 BIG_JUMP_HIGH_KM = 75.0    # high-accuracy: WARN, unusually long for a detailed trace
 GEOCODE_FAR_KM = 50.0      # geocoded DB location this far from endpoint -> WARN
+SHRINK_RATIO = 0.5         # UPDATE shorter than this share of the repo route -> WARN
 
 # Map visibility -- mirrors the row filter in goit-ggit-data-ops
 # releases/downloads/pipeline_exports.py (fetch_pipeline_data +
@@ -391,6 +398,24 @@ def line_coords(gj):
     return [ln for ln in lines if len(ln) >= 2]
 
 
+def is_zero_length(line):
+    """True for a coordinate sequence whose vertices all coincide."""
+    return len({(p[0], p[1]) for p in line}) < 2
+
+
+def same_part(a, b, tol=1e-5):
+    """True if two parts share every vertex to ~1 m, in either direction.
+
+    A tolerance rather than rounding: re-exports trim precision (82.1120949
+    -> 82.112095), which can land either side of a rounding boundary.
+    """
+    if len(a) != len(b):
+        return False
+    close = lambda x, y: abs(x[0] - y[0]) <= tol and abs(x[1] - y[1]) <= tol
+    return (all(close(x, y) for x, y in zip(a, b)) or
+            all(close(x, y) for x, y in zip(a, b[::-1])))
+
+
 def geodesic_km(line):
     return GEOD.line_length([p[0] for p in line], [p[1] for p in line]) / 1000.0
 
@@ -547,11 +572,13 @@ def check_route(path, db, countries, repo_hash, repo_pid, geocoder):
     lines = line_coords(read_geojson(path))
     h = geom_hash(lines)
     existing = repo_pid.get(pid)
+    repo_lines = []
     if existing is None:
         res.state = "NEW"
     else:
         try:
-            same = geom_hash(line_coords(read_geojson(existing))) == h
+            repo_lines = line_coords(read_geojson(existing))
+            same = geom_hash(repo_lines) == h
         except Exception:
             same = False
         res.state = "UPDATE(unchanged)" if same else "UPDATE"
@@ -577,6 +604,18 @@ def check_route(path, db, countries, repo_hash, repo_pid, geocoder):
             else:
                 res.add("WARN", f"geometry identical to {twin} -- possible "
                                 "copy-paste error (verify it should differ)")
+
+    # zero-length parts: the batch-export stray-feature signature (f2a1d50f).
+    # Warn, then keep them out of every later check -- they would otherwise
+    # pose as an endpoint.
+    zero = [ln for ln in lines if is_zero_length(ln)]
+    if zero:
+        res.add("WARN", f"{len(zero)} zero-length part(s) (every vertex "
+                        "identical) -- export artifact; whole zero-length "
+                        "features are dropped on --copy, parts inside a "
+                        "multi-part feature need a manual fix")
+        lines = [ln for ln in lines if not is_zero_length(ln)]
+    repo_lines = [ln for ln in repo_lines if not is_zero_length(ln)]
 
     # empty (null-geometry) route: valid, but note it
     if not lines:
@@ -655,6 +694,22 @@ def check_route(path, db, countries, repo_hash, repo_pid, geocoder):
         diff = (total_km - db_len) / db_len
         msg = f"length: route {total_km:.0f} km vs DB {db_len:.0f} km ({diff:+.0%})"
         res.add("WARN" if abs(diff) > LENGTH_TOL else "OK", msg)
+
+    # 6b. does the update lose route the repo already has?
+    if repo_lines and res.state == "UPDATE":
+        repo_km = sum(geodesic_km(ln) for ln in repo_lines)
+        if len(lines) < len(repo_lines) and all(
+                any(same_part(ln, r) for r in repo_lines) for ln in lines):
+            res.add("WARN", f"all {len(lines)} upload part(s) already in the "
+                            f"repo copy ({len(repo_lines)} parts, "
+                            f"{repo_km:.0f} km) -- a partial export; merging "
+                            "would delete the rest")
+        elif total_km < SHRINK_RATIO * repo_km and (
+                not db_len or abs(repo_km - db_len) < abs(total_km - db_len)):
+            vs_db = f", DB {db_len:.0f} km" if db_len else ""
+            res.add("WARN", f"shrinks the repo route: upload {total_km:.0f} km "
+                            f"vs repo {repo_km:.0f} km{vs_db} -- merging would "
+                            "lose route")
 
     # 7. crude / big-jump geometry (a cue, severity depends on RouteAccuracy)
     seg_max = 0.0
@@ -743,7 +798,8 @@ def print_report(results):
 
 # --- empty-feature stripping -------------------------------------------------
 # Some researcher exports carry features whose geometry has an empty
-# coordinates array ("coordinates": []). RFC 7946 requires at least two
+# coordinates array ("coordinates": []), or a line whose vertices all sit on
+# one point. RFC 7946 requires at least two
 # positions in a LineString, so these are invalid GeoJSON -- but they slip
 # past validate_geojson.py, which only checks the positions that are there.
 # They are pure noise (one upload carried 51 of them), so routes are stripped
@@ -758,7 +814,11 @@ def print_report(results):
 # something this function should invent.
 
 def _is_empty_geometry(obj):
-    """True for a feature whose geometry exists but holds no usable position."""
+    """True for a feature whose geometry exists but holds no usable line.
+
+    Zero-length lines (every vertex identical -- the stray-feature
+    signature of the batch-export bug) count as empty too.
+    """
     if not isinstance(obj, dict):
         return False
     geom = obj.get("geometry")
@@ -768,10 +828,12 @@ def _is_empty_geometry(obj):
     if coords is None:
         return False
     gtype = geom.get("type")
-    if gtype in ("LineString", "MultiPoint"):
+    if gtype == "MultiPoint":
         return len(coords) < 2
+    if gtype == "LineString":
+        return len(coords) < 2 or is_zero_length(coords)
     if gtype == "MultiLineString":
-        return all(len(part) < 2 for part in coords)
+        return all(len(part) < 2 or is_zero_length(part) for part in coords)
     if gtype == "Point":
         return len(coords) == 0
     return False
