@@ -90,6 +90,8 @@ Each route is graded **PASS** / **WARN** / **FAIL**. On top of the CI checks (va
 * **route length** vs the DB length field (WARN beyond ±30%);
 * **crude geometry** — long straight segments, reported as a quiet "fix eventually" note for `low`/`medium`/`no route` accuracy but a WARN when the DB says `high`;
 * **possible duplicate** — geometry identical to another project's route (INFO when they're plausibly parallel routes, WARN otherwise);
+* **zero-length parts** — a part whose vertices are all identical, the batch-export stray-feature signature (WARN; whole zero-length features are dropped on copy);
+* **shrinking the repo route** — an update much shorter than the file it would replace and further from the DB length, or one whose parts all already sit in the repo copy (a partial export) (WARN);
 * a soft **geocoding hint** — distance from the geocoded DB `StartLocation`/`EndLocation` place name to the matching endpoint (`--no-geocode` to skip).
 
 **2. Copy (stages files into the repo) — only after you've read the report:**
