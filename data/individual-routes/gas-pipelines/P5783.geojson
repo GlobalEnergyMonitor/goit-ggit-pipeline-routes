@@ -1,7 +1,10 @@
 {
 "type": "FeatureCollection",
+"name": "P5783",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "ProjectID": "P5783" }, "geometry": { "type": "LineString", "coordinates": [ [ 52.17066, 43.54285 ], [ 51.19745, 43.6588 ] ] } }
+{ "type": "Feature", "properties": { "ProjectID": "P5783" }, "geometry": { "type": "LineString", "coordinates": [ [ 52.104562658418203, 43.550724956850431 ], [ 51.19745, 43.6588 ] ] } },
+{ "type": "Feature", "properties": { "ProjectID": "P5783" }, "geometry": { "type": "LineString", "coordinates": [ [ 52.122323932554195, 43.548608846518576 ], [ 52.111503926191773, 43.549897961650686 ] ] } },
+{ "type": "Feature", "properties": { "ProjectID": "P5783" }, "geometry": { "type": "LineString", "coordinates": [ [ 52.111503926191773, 43.549897961650686 ], [ 52.104613259503665, 43.550718928145571 ] ] } }
 ]
 }
