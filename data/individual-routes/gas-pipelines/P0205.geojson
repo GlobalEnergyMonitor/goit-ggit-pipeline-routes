@@ -11,7 +11,6 @@
                 "location": "underground",
                 "man_made": "pipeline",
                 "full_id": "w250226256",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Iroquois Pipeline/add_pipeline.geojson",
                 "osm_id": "250226256"
             },
             "geometry": {
@@ -360,7 +359,6 @@
             "type": "Feature",
             "properties": {
                 "operator": "Iroquois Gas Transmission System",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Iroquois Pipeline/add pipeline 10.geojson",
                 "osm_type": "way",
                 "location": "underground",
                 "man_made": "pipeline",
@@ -1448,7 +1446,6 @@
                 "substance": "gas",
                 "full_id": "w250308178",
                 "name": "Iroquois Gas Transmission System",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Iroquois Pipeline/add pipeline 5.geojson",
                 "layer": "-1",
                 "osm_id": "250308178"
             },
@@ -1787,7 +1784,6 @@
         {
             "type": "Feature",
             "properties": {
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Iroquois Pipeline/add pipeline 9.geojson",
                 "full_id": "w250469907",
                 "operator": "Iroquois Gas Transmission System",
                 "osm_id": "250469907",
@@ -2180,7 +2176,6 @@
         {
             "type": "Feature",
             "properties": {
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Iroquois Pipeline/add pipeline 4.geojson",
                 "operator": "Iroquois Gas Transmission System",
                 "osm_id": "250221462",
                 "usage": "transmission",
@@ -4240,8 +4235,7 @@
                 "full_id": "w250469905",
                 "substance": "gas",
                 "name": "Iroquois Gas Transmission System",
-                "layer": "-1",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Iroquois Pipeline/add pipeline 8.geojson"
+                "layer": "-1"
             },
             "geometry": {
                 "type": "LineString",
@@ -4773,7 +4767,6 @@
                 "man_made": "pipeline",
                 "substance": "gas",
                 "name": "Iroquois Gas Transmission System",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Iroquois Pipeline/add pipeline 3.geojson",
                 "osm_id": "250221469",
                 "full_id": "w250221469",
                 "layer": "-1"
@@ -6077,7 +6070,6 @@
                 "man_made": "pipeline",
                 "substance": "gas",
                 "osm_id": "250308176",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Iroquois Pipeline/add pipeline 7.geojson",
                 "name": "Iroquois Gas Transmission System",
                 "full_id": "w250308176",
                 "layer": "-1"
@@ -7558,7 +7550,6 @@
                 "osm_id": "250221461",
                 "full_id": "w250221461",
                 "man_made": "pipeline",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Iroquois Pipeline/add pipeline 2.geojson",
                 "substance": "gas",
                 "name": "Iroquois Gas Transmission System",
                 "layer": "-1"
@@ -7989,7 +7980,6 @@
                 "location": "underground",
                 "man_made": "pipeline",
                 "substance": "gas",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Iroquois Pipeline/add pipeline 6.geojson",
                 "name": "Iroquois Gas Transmission System",
                 "osm_id": "250308179",
                 "full_id": "w250308179"

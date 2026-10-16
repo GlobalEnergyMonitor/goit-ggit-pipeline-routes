@@ -8,7 +8,6 @@
             "properties": {
                 "full_id": "w7064076",
                 "tiger:reviewed": "no",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/15.geojson",
                 "osm_type": "way",
                 "location": "underground",
                 "osm_id": "7064076",
@@ -76,7 +75,6 @@
                 "tiger:cfcc": "C10",
                 "layer": "-1",
                 "name": "Pipeline",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/15.geojson",
                 "tiger:upload_uuid": "bulk_upload.pl-ae92469e-cc47-4f36-b48d-3cbbd2da5985",
                 "osm_id": "164979450",
                 "osm_type": "way",
@@ -119,7 +117,6 @@
         {
             "type": "Feature",
             "properties": {
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/10.geojson",
                 "osm_type": "way",
                 "location": "underground",
                 "man_made": "pipeline",
@@ -480,7 +477,6 @@
                 "osm_type": "way",
                 "location": "underground",
                 "man_made": "pipeline",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/4.geojson",
                 "osm_id": "71773513",
                 "substance": "gas",
                 "full_id": "w71773513",
@@ -831,7 +827,6 @@
         {
             "type": "Feature",
             "properties": {
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/8.geojson",
                 "osm_type": "way",
                 "location": "underground",
                 "man_made": "pipeline",
@@ -934,7 +929,6 @@
         {
             "type": "Feature",
             "properties": {
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/9.geojson",
                 "osm_type": "way",
                 "location": "underground",
                 "man_made": "pipeline",
@@ -1070,8 +1064,7 @@
                 "full_id": "w164878785",
                 "location": "underground",
                 "man_made": "pipeline",
-                "layer": "-1",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/14.geojson"
+                "layer": "-1"
             },
             "geometry": {
                 "type": "LineString",
@@ -1162,7 +1155,6 @@
         {
             "type": "Feature",
             "properties": {
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/3.geojson",
                 "full_id": "w88145004",
                 "osm_type": "way",
                 "location": "underground",
@@ -1639,7 +1631,6 @@
                 "substance": "gas",
                 "full_id": "w71771218",
                 "osm_id": "71771218",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/5.geojson",
                 "layer": "-1"
             },
             "geometry": {
@@ -2152,7 +2143,6 @@
             "type": "Feature",
             "properties": {
                 "osm_type": "way",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/12.geojson",
                 "location": "underground",
                 "man_made": "pipeline",
                 "full_id": "w81540067",
@@ -2270,7 +2260,6 @@
                 "location": "underground",
                 "man_made": "pipeline",
                 "substance": "gas",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/13.geojson",
                 "osm_id": "7042897",
                 "layer": "-1"
             },
@@ -2385,7 +2374,6 @@
             "properties": {
                 "full_id": "w164979481",
                 "osm_id": "164979481",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/15.geojson",
                 "osm_type": "way",
                 "location": "underground",
                 "man_made": "pipeline",
@@ -2589,7 +2577,6 @@
                 "location": "underground",
                 "man_made": "pipeline",
                 "substance": "gas",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/1.geojson",
                 "full_id": "w33860257",
                 "layer": "-1"
             },
@@ -4299,7 +4286,6 @@
             "type": "Feature",
             "properties": {
                 "osm_type": "way",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/7.geojson",
                 "full_id": "w71771280",
                 "man_made": "pipeline",
                 "osm_id": "71771280",
@@ -5275,7 +5261,6 @@
                 "man_made": "pipeline",
                 "substance": "gas",
                 "osm_id": "221657114",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/2.geojson",
                 "full_id": "w221657114",
                 "layer": "-1"
             },
@@ -6192,7 +6177,6 @@
                 "man_made": "pipeline",
                 "osm_id": "71771204",
                 "full_id": "w71771204",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/6.geojson",
                 "layer": "-1"
             },
             "geometry": {
@@ -6575,8 +6559,7 @@
                 "man_made": "pipeline",
                 "substance": "gas",
                 "layer": "-1",
-                "full_id": "w80105949",
-                "path": "/Users/char/Desktop/gem o&g resources/gis data/Kern River/11.geojson"
+                "full_id": "w80105949"
             },
             "geometry": {
                 "type": "LineString",
