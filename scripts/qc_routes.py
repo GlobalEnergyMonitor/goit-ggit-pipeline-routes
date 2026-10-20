@@ -516,7 +516,8 @@ def check_map_visibility(res, rec):
     """Flag tracker-row gaps that would keep a merged route off the interim map."""
     fuel_ok = MAP_FUELS.get(rec["fuel"], set())
     problems = []
-    if rec["Fuel"] not in fuel_ok:
+    # the sheet lowercased Fuel on 2026-10-20, so compare without case
+    if rec["Fuel"].lower() not in {f.lower() for f in fuel_ok}:
         problems.append(f"Fuel {rec['Fuel'] or '<blank>'!r} is not in the "
                         f"{rec['fuel']} map's fuel set {sorted(fuel_ok)}")
     if not rec["PipelineName"]:
