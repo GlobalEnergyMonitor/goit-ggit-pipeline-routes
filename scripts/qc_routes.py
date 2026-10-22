@@ -42,7 +42,8 @@ Checks
           needs, so the route would be invisible on the map even once merged:
           Fuel not in the map's fuel set, PipelineName blank, Status blank /
           N/A / not a map filter value, RouteAccuracy blank or still 'no route'
-          (the build nulls that geometry). Fix the sheet, then re-run with
+          (the build nulls that geometry), RouteType still 'Unavailable' or
+          'Not mapped' on a file with geometry. Fix the sheet, then re-run with
           --refresh.
   INFO  - crude/low-resolution geometry (only elevated when RouteAccuracy is
           high) ; null-island or duplicate consecutive vertices ; new-vs-update
@@ -571,6 +572,10 @@ def check_route(path, db, countries, repo_hash, repo_pid, geocoder):
 
     # 3. new vs update + duplicate detection
     lines = line_coords(read_geojson(path))
+    if lines and rec["RouteType"].lower().startswith(("unavailable", "not mapped")):
+        res.add("WARN", f"map: RouteType is {rec['RouteType']!r} but the file "
+                        "has geometry -- set it to 'Mapped route (at any accuracy)'")
+        res.map_hidden = True
     h = geom_hash(lines)
     existing = repo_pid.get(pid)
     repo_lines = []
