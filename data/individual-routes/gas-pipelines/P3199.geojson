@@ -1,7 +1,36 @@
 {
-"type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "ProjectID": "P3199" }, "geometry": null }
-]
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "ProjectID": "P3199",
+    "source": "OSM",
+    "license": "ODbL",
+    "attribution": "\u00a9 OpenStreetMap contributors",
+    "osm_ids": []
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.1379,
+      40.800685
+     ],
+     [
+      -74.131193,
+      40.796788
+     ],
+     [
+      -74.128447,
+      40.795488
+     ],
+     [
+      -74.128435,
+      40.795484
+     ]
+    ]
+   }
+  }
+ ]
 }
