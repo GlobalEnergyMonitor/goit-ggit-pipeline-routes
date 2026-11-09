@@ -1,7 +1,1 @@
-{
-"type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "ProjectID": "P1481" }, "geometry": { "type": "LineString", "coordinates": [ [ 29.993189, 47.717178 ], [ 27.78245, 48.606661 ], [ 24.536991, 48.807141 ] ] } }
-]
-}
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"LineString","coordinates":[[29.966,47.719],[29.245365,47.763512],[28.48347,47.833469],[28.02505,47.865929],[27.701012,47.830872],[27.152051,48.084686],[27.017471,48.237385],[26.97473,48.295868],[26.210713,48.423479],[26.101269,48.470992],[25.481756,48.501665],[24.644698,48.67999],[24.538,48.807]]},"properties":{"name":"Ananiv-Bohorodchany Gas Pipeline"}}]}
